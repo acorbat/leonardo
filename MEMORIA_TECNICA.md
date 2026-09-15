@@ -33,9 +33,9 @@ El **Hospital de Niños Dr. Ricardo Gutiérrez** (CABA) es **un importante centr
 Actualmente, el hospital cuenta únicamente con un microscopio óptico estándar de campo claro antiguo, acoplado a una cámara no apta que adquiere a tasas convencionales (≤30 fps), provocando un submuestreo severo (*aliasing*) frente a cilias que baten a 10–15 Hz [5]. Más crítico aún es la **ausencia total de control ambiental**: a temperatura ambiente no controlada (20–22 °C), la frecuencia de batido ciliar se deprime sustancialmente (la CBF es de 6,3–9,0 Hz a 32 °C y de 10–15 Hz a 37 °C) y la muestra se deseca rápidamente en el portaobjetos, induciendo discinesias secundarias y falsos positivos [5, 7]. Finalmente, la evaluación clínica actual es visual y manual, lo que genera una alta subjetividad y dependencia del operador [5].
 
 ### La Articulación Interinstitucional: FCEN-UBA y Hospital Gutiérrez
-Para superar esta barrera, este proyecto establece una sinergia estratégica:
-*   **Sede de Ejecución y Cómputo (FCEN-UBA):** La Facultad de Ciencias Exactas y Naturales de la UBA aporta el desarrollo de algoritmos de visión por computadora, bioinformática, modelado CAD, electrónica de control y la dirección de estudiantes de grado universitarios.
-*   **Colaboración Clínica (Hospital Gutiérrez):** Médicos especialistas de los Servicios de Neumonología y Patología del hospital aportan la cohorte pediátrica, la obtención de muestras de cepillado nasal bajo normas éticas y la validación asistencial directa.
+Para superar esta barrera, este proyecto establece una sinergia estratégica orientada a la ingeniería, la computación científica y la capacitación médica:
+*   **Sede de Ejecución y Cómputo (FCEN-UBA):** La Facultad de Ciencias Exactas y Naturales de la UBA lidera el desarrollo de los algoritmos de visión artificial, los flujos bioinformáticos *in-silico* de bajo costo, el diseño y fabricación de la cámara ambiental termostatizada y la dirección de estudiantes de grado universitarios.
+*   **Colaboración Hospitalaria (Hospital Gutiérrez):** Médicos especialistas de los Servicios de Neumonología y Patología del hospital colaboran en la definición de requisitos clínicos, pruebas del equipamiento óptico en banco de pruebas y reciben la capacitación metodológica para operar la plataforma. Dado que no se cuenta con autorizaciones éticas para investigación clínica experimental en pacientes pediátricos, **el proyecto prescinde de ensayos de validación clínica en seres humanos**, focalizándose en el desarrollo tecnológico, la calibración instrumental y la capacitación del equipo médico.
 
 ---
 
@@ -47,32 +47,33 @@ Las directrices de la *European Respiratory Society* (ERS 2017) recomiendan la v
 Sin embargo, el diagnóstico actual a nivel mundial enfrenta tres limitaciones no resueltas [5]:
 1.  **Falsos Negativos de TEM y Genética:** La microscopía electrónica de transmisión (TEM) detecta defectos estructurales en el **70–79% de los casos** (ausencia de brazos de dineína externos [ODA], internos [IDA] o desorganización microtubular [MTD]) [2, 7]. Esto implica que **un 20–30% de los pacientes con DCP confirmada presentan ultraestructura en TEM completamente normal o no concluyente**, incluyendo mutaciones en genes como *DNAH11, DRC2, OFD1, GAS2L2, LRRC56, CFAP57, CFAP221, SPEF2* y *RSPH1* [5, 7]. En estos pacientes, la videomicroscopía funcional (DHSV) es el único método capaz de evidenciar la anomalía motil [5].
 2.  **Falta de Estandarización Ambiental:** La literatura demuestra que la CBF varía linealmente con la temperatura (la CBF fisiológica de 10–15 Hz solo se alcanza a 37 °C) y que la estabilidad óptima de la muestra de cepillado nasal se preserva durante 3 a 9 horas a temperaturas controladas de transporte [5]. La ausencia de cámaras de incubación termostatizadas en microscopios clínicos compromete la reproducibilidad diagnóstica.
-3.  **Subjetividad del Análisis Manual:** La inspección cualitativa del CBP depende enteramente de la experiencia del observador. Métodos computacionales emergentes como el flujo óptico (*optical flow*), el kymograph digital y la microscopía dinámica diferencial (DDM) han demostrado capacidad para parametrizar la asimetría y coordinación ciliar de forma objetiva, pero requieren validación clínica integrada en software clínico amigable [5].
+3.  **Subjetividad del Análisis Manual:** La inspección cualitativa del CBP depende enteramente de la experiencia del observador. Métodos computacionales emergentes como el flujo óptico (*optical flow*), el kymograph digital y la microscopía dinámica diferencial (DDM) han demostrado capacidad para parametrizar la asimetría y coordinación ciliar de forma objetiva, pero requieren validación integrada en software clínico amigable [5].
 
-En el aspecto genético, se conocen más de 50 genes asociados a DCP (>2.000 variantes patogénicas) [3, 7]. Mutaciones en *DNAH5* y *DNAI1* codifican componentes de los ODA y representan más del **30% de todos los casos de DCP** [3]. Por su parte, variantes en *CCDC39* y *CCDC40* provocan defectos combinados de IDA y desorganización microtubular (MTD), cursando con fenotipos clínicos muy agresivos de rápida progresión hacia bronquiectasias severas e insuficiencia respiratoria [6, 7]. A pesar de que los paneles NGS detectan actualmente alrededor del 70% de las mutaciones causales, **el 30% restante carece de confirmación molecular** [3], desconociéndose la distribución de variantes alélicas y mutaciones de efecto fundador en la población pediátrica de la Argentina.
+En el aspecto genético, se conocen más de 50 genes asociados a DCP (>2.000 variantes patogénicas) [3, 7]. Mutaciones en *DNAH5* y *DNAI1* codifican componentes de los ODA y representan más del **30% de todos los casos de DCP** [3]. Por su parte, variantes en *CCDC39* y *CCDC40* provocan defectos combinados de IDA y desorganización microtubular (MTD), cursando con fenotipos clínicos muy agresivos de rápida progresión hacia bronquiectasias severas e insuficiencia respiratoria [6, 7]. Si bien la secuenciación comercial resulta prohibitiva para hospitales públicos, las bases de datos abiertas y herramientas bioinformáticas *in-silico* permiten priorizar y clasificar variantes patogénicas a costo prácticamente nulo.
 
 ### 2.2 Novedad y Carácter Innovador
 Frente a equipamientos comerciales cerrados cuyo costo supera los USD 150.000, esta propuesta ofrece una innovación de **muy alta costo-efectividad** basada en:
 1.  **Instrumentación in situ y control ambiental estricto:** Prototipado y fabricación aditiva de una cámara de incubación para platina con control térmico en lazo cerrado a 37 °C ± 0,3 °C y saturación de humedad (>90%), dirigida por estudiantes de grado de la FCEN-UBA, acoplada a un sensor industrial CMOS de alta velocidad (>200 fps) operado por software abierto (*Micro-Manager*) [5].
 2.  **Visión por computadora para DHSV:** Algoritmo que calcula la CBF píxel a píxel mediante Transformada Rápida de Fourier (FFT) y clasifica el CBP utilizando flujo óptico denso (Farnebäck) y kymographs automáticos ortogonales a la pared celular, eliminando el sesgo del observador [5].
-3.  **Cuantificación digital de micrografías de TEM:** Segmentación de axonemas 9+2 y perfilometría radial automatizada para medir densidad de brazos de dineína (ODA/IDA) en micrografías electrónicas [2, 7].
-4.  **Bioinformática y Genómica Traslacional:** Priorización de variantes en paneles multigenéticos (>50 genes) y correlación multivariada fenotipo-genotipo en niños del hospital, construyendo el primer mapa molecular de DCP en Argentina [3, 7].
+3.  **Cuantificación digital de micrografías de TEM:** Segmentación de axonemas 9+2 y perfilometría radial automatizada para medir densidad de brazos de dineína (ODA/IDA) en micrografías electrónicas de archivo [2, 7].
+4.  **Bioinformática In-Silico de Bajo Costo:** Pipeline computacional reproducible para la anotación y priorización clínica de variantes patogénicas en >50 genes, minando bases públicas abiertas sin generar costos de secuenciación masiva *de novo* [3, 6, 7].
+5.  **Transferencia y Capacitación Médica en Open Science:** Capacitación directa a los especialistas del hospital y liberación íntegra del software bajo código abierto, allanando el camino para futuras fases diagnósticas.
 
 ### 2.3 Hipótesis de Trabajo
-La integración de instrumentación in situ de bajo costo (cámara ambiental a 37 °C y sensor de alta velocidad) con una suite de visión computacional y análisis bioinformático permitirá alcanzar una concordancia diagnóstica superior al 95% frente a los estándares internacionales en las biopsias nasales del Hospital Gutiérrez, reduciendo la edad mediana de diagnóstico y detectando casos atípicos no identificados por TEM.
+La integración de instrumentación óptica in situ de bajo costo (cámara ambiental a 37 °C y sensor de alta velocidad) con una suite de visión computacional, análisis bioinformático *in-silico* y capacitación médica interdisciplinaria permitirá dotar al Hospital Gutiérrez de las capacidades técnicas y formativas necesarias para el diagnóstico cuantitativo de la DCP según estándares internacionales, eliminando la subjetividad del operador y sin depender de equipamientos comerciales privativos.
 
 ---
 
 ## 3. Objetivos
 
 ### Objetivo General
-Desarrollar, validar e implementar una plataforma computacional integral de bioimagen, visión artificial y genómica para el diagnóstico de la Disquinesia Ciliar Primaria, ejecutada en la Facultad de Ciencias Exactas y Naturales (UBA) en estrecha colaboración con médicos del Hospital de Niños Dr. Ricardo Gutiérrez.
+Desarrollar, implementar y transferir una plataforma computacional integral de bioimagen, visión artificial y genómica de bajo costo para el diagnóstico de la Disquinesia Ciliar Primaria, ejecutada en la Facultad de Ciencias Exactas y Naturales (UBA) en colaboración con médicos del Hospital de Niños Dr. Ricardo Gutiérrez.
 
 ### Objetivos Específicos
 1.  **OE1:** Diseñar, construir y calibrar una cámara ambiental con control térmico a 37 °C y humedad relativa saturada (>90%), acoplando un sensor digital CMOS industrial de alta velocidad (≥200 fps) al microscopio óptico del hospital mediante software de código abierto (*Micro-Manager*).
 2.  **OE2:** Desarrollar un pipeline computacional de visión artificial en Python para la segmentación del epitelio ciliado, cálculo espectral de CBF píxel a píxel por FFT y cuantificación de descriptores cinéticos de CBP mediante flujo óptico y kymographs.
 3.  **OE3:** Desarrollar un algoritmo de análisis digital de bioimágenes de Microscopía Electrónica de Transmisión (TEM) para la cuantificación objetiva de la geometría axonémica 9+2 y la integridad de los brazos de dineína externos e internos (ODA/IDA).
-4.  **OE4:** Implementar un flujo bioinformático para la priorización funcional de variantes en genes causales de DCP (>50 genes) en pacientes pediátricos del hospital y correlacionar los hallazgos genotípicos con los fenotipos dinámicos (DHSV) y ultraestructurales (TEM).
+4.  **OE4:** Implementar un flujo bioinformático *in-silico* de bajo costo para la priorización y anotación funcional de variantes en genes causales de DCP (>50 genes) a partir de repositorios genómicos públicos abiertos, correlacionando los perfiles moleculares con los fenotipos cinéticos (DHSV) y ultraestructurales (TEM).
 5.  **OE5:** Capacitar a los médicos especialistas del Hospital Gutiérrez y liberar el software como herramienta de código abierto (*Open Science*).
 
 ---
@@ -97,12 +98,12 @@ gantt
     section WP3 Bioimágenes TEM
     Digitalización y curaduría de micrografías axonema  : 2027-09, 4M
     Algoritmo de cuantificación 9+2 y dineína (ODA/IDA) : 2027-11, 5M
-    section WP4 Bioinformática Genómica
-    Pipeline NGS y filtrado de variantes en >50 genes   : 2027-12, 5M
-    Correlación fenotipo-genotipo en cohorte argentina  : 2028-03, 4M
-    section WP5 Validación & Transferencia
-    Validación clínica ciega con médicos del Hospital   : 2028-02, 5M
-    Capacitación profesional y liberación Open Source   : 2028-05, 4M
+    section WP4 Bioinformática In-Silico
+    Pipeline in-silico y minería en bases abiertas     : 2027-12, 5M
+    Priorización funcional de variantes en >50 genes    : 2028-03, 4M
+    section WP5 Capacitación & Open Science
+    Talleres de capacitación a médicos especialistas    : 2028-02, 4M
+    Liberación de software abierto y documentación      : 2028-05, 4M
     Publicaciones científicas e informe final BBVA      : 2028-07, 2M
 ```
 
@@ -112,10 +113,10 @@ gantt
 *   **Sede:** Laboratorio en FCEN-UBA / Instalación en Hospital Gutiérrez.
 *   **Responsable:** Investigador Postulante (dirigiendo a 2 estudiantes avanzados de grado de FCEN-UBA / Ingeniería).
 *   **Metodología:**
-    1.  *Cámara de incubación ambiental:* Modelado en software CAD de una cámara cerrada adaptada a la platina. Chasis fabricado por impresión 3D. Implementación de circuito de control en lazo cerrado PID con microcontrolador ESP32 o Arduino y sensores térmicos, garantizando **37 °C ± 0,3 °C** en la gota de biopsia, neutralizando el sesgo térmico demostrado en la literatura (donde la CBF desciende a 6,3–9,0 Hz a 32 °C o menos) [5, 7]. Incorporación de reservorio de humidificación para mantener humedad relativa >90%, evitando la desecación de las células durante la observación (estable entre 3 y 9 horas post-muestreo) [5].
-    2.  *Sensor CMOS de alta velocidad:* Montaje de cámara industrial monocromática USB 3.0 con obturador global (*global shutter*), velocidad de muestreo de **200 a 400 fps** a resolución útil diagnóstica (800x600 px), y lente de reducción óptica C-mount de 0,5x acoplada al puerto trinocular del microscopio del hospital, cumpliendo estrictamente con el rango de 120–500 fps estipulado por las guías [5].
-    3.  *Software de control:* Configuración de adquisición en **Micro-Manager** / Python para grabación sincrónica continua en memoria RAM de alta velocidad.
-*   **Entregables:** Cámara ambiental calibrada y operativa a 37 °C; microscopio del hospital adquiriendo video a >200 fps.
+    1.  *Cámara de incubación ambiental:* Modelado en software CAD de una cámara cerrada adaptada a la platina. Chasis fabricado por manufactura en impresión 3D. Implementación de circuito de control en lazo cerrado PID con microcontrolador ESP32 o Arduino y sensores térmicos, garantizando **37 °C ± 0,3 °C** en la muestra para neutralizar el sesgo térmico (donde la CBF desciende a 6,3–9,0 Hz a 32 °C o menos) [5, 7]. Reservorio de humidificación para humedad relativa >90%, evitando la desecación durante la observación (ventana de estabilidad celular de 3 a 9 horas) [5].
+    2.  *Sensor CMOS de alta velocidad:* Montaje de cámara industrial monocromática USB 3.0 con obturador global (*global shutter*), velocidad de muestreo de **200 a 400 fps** a resolución útil diagnóstica (800x600 px), y lente de reducción óptica C-mount acoplada al puerto trinocular del microscopio, cumpliendo con el rango de 120–500 fps estipulado por las guías [5].
+    3.  *Software de control:* Configuración de adquisición en **Micro-Manager** / Python para grabación continua en memoria RAM de alta velocidad.
+*   **Entregables:** Cámara ambiental calibrada a 37 °C; microscopio adaptado adquiriendo video a >200 fps.
 
 ---
 
@@ -123,11 +124,11 @@ gantt
 *   **Sede:** FCEN-UBA.
 *   **Responsable:** Investigador Postulante.
 *   **Metodología:**
-    1.  *Preprocesamiento:* Corrección de desplazamiento espasmódico del tejido mediante correlación de fase y realce de bordes.
-    2.  *Segmentación automatizada:* Detección de regiones epiteliales con motilidad activa mediante varianza temporal píxel a píxel, discriminando moco estático, eritrocitos y detritos celulares.
-    3.  *Cuantificación de CBF (Frecuencia):* Análisis espectral de potencia mediante **Transformada Rápida de Fourier (FFT)** aplicada a la serie temporal de intensidad de cada píxel de la región ciliar. Generación de mapas de calor con el pico de frecuencia dominante (rango normal: 10–15 Hz a 37 °C), CBF media y porcentaje de áreas inmóviles (<4 Hz) [5, 7].
-    4.  *Cuantificación de CBP (Patrón de Batido):* Siguiendo la recomendación de ERS de no evaluar CBF aisladamente [2, 5], se calculará el campo vectorial de velocidad mediante **flujo óptico denso (Farnebäck)** y se generarán kymographs digitales automáticos perpendiculares a la membrana para medir: (a) amplitud angular del batido, (b) asimetría de la carrera efectiva vs. recuperación (*effective/recovery stroke*), y (c) índice de disquinesia ciliar (CDI) que discrimine batidos normales, rígidos (*DNAH11*), rotacionales (*HYDIN, RSPH*) o inmovilidad completa (*DNAH5, DNAI1*) [5, 7].
-*   **Entregables:** Módulo de visión por computadora en Python con interfaz gráfica de usuario (GUI en PyQt/Napari) lista para el uso médico asistencial.
+    1.  *Preprocesamiento:* Corrección de desplazamiento de tejido mediante correlación de fase y realce de bordes.
+    2.  *Segmentación automatizada:* Detección de regiones epiteliales activas mediante varianza temporal píxel a píxel, discriminando moco estático, eritrocitos y detritos celulares.
+    3.  *Cuantificación de CBF (Frecuencia):* Análisis espectral de potencia mediante **Transformada Rápida de Fourier (FFT)** aplicada a la serie temporal de intensidad píxel a píxel. Generación de mapas de calor de frecuencia dominante (rango fisiológico: 10–15 Hz a 37 °C), CBF media y áreas inmóviles (<4 Hz) [5, 7].
+    4.  *Cuantificación de CBP (Patrón de Batido):* Conforme al mandato ERS de no evaluar CBF aisladamente [2, 5], se calculará el campo vectorial de velocidad mediante **flujo óptico denso (Farnebäck)** y se generarán kymographs digitales automáticos perpendiculares a la membrana para medir: amplitud angular de batido, asimetría de carrera efectiva vs. recuperación (*effective/recovery stroke*), e índice de disquinesia ciliar (CDI) para clasificar movimientos normales, rígidos (*DNAH11*), rotacionales (*HYDIN, RSPH*) o inmovilidad completa (*DNAH5, DNAI1*) [5, 7].
+*   **Entregables:** Módulo de visión por computadora en Python con interfaz gráfica (GUI en PyQt/Napari) para uso médico.
 
 ---
 
@@ -135,33 +136,36 @@ gantt
 *   **Sede:** FCEN-UBA en articulación con el Servicio de Patología del Hospital Gutiérrez.
 *   **Responsable:** Investigador Postulante.
 *   **Metodología:**
-    1.  *Estandarización y curaduría:* Digitalización calibrada de cortes transversales de axonemas ciliares respiratorios provenientes del microscopio electrónico de transmisión.
-    2.  *Segmentación geométrica del axonema:* Algoritmo basado en transformada circular de Hough para localizar el par central de microtúbulos simples y los 9 dobletes periféricos de microtúbulos A y B (arquitectura canónica 9+2) [2, 7].
-    3.  *Cuantificación de brazos de dineína (ODA/IDA):* Extracción de perfiles radiales de intensidad óptica normalizada en las coordenadas específicas de los microtúbulos A para cuantificar de manera no sesgada la ausencia o hipoplasia de brazos externos (ODA) e internos (IDA). Aplicación de promediado de partículas 2D (*sub-axonemal averaging*) para incrementar la relación señal-ruido en muestras patológicas [2, 7].
-*   **Entregables:** Algoritmo cuantitativo validado que reporta automáticamente el porcentaje de axonemas con defectos de ODA, IDA o desorganización microtubular (MTD).
+    1.  *Curaduría y digitalización:* Digitalización calibrada de micrografías electrónicas de archivo de cortes transversales de axonemas ciliares respiratorios.
+    2.  *Segmentación geométrica del axonema:* Algoritmo basado en transformada circular de Hough para localizar el par central de microtúbulos simples y los 9 dobletes periféricos de microtúbulos A y B (geometría canónica 9+2) [2, 7].
+    3.  *Cuantificación de brazos de dineína (ODA/IDA):* Perfilometría radial de intensidad óptica normalizada en las coordenadas del microtúbulo A para cuantificar objetivamente la presencia o ausencia de brazos de dineína externos (ODA) e internos (IDA). Aplicación de promediado de partículas 2D (*sub-axonemal averaging*) para optimizar la relación señal-ruido [2, 7].
+*   **Entregables:** Algoritmo validado de cuantificación ultraestructural con reporte automatizado de integridad axonémica.
 
 ---
 
-### WP4: Bioinformática, Genómica y Correlación Fenotipo-Genotipo (Meses 8-16)
-*   **Sede:** FCEN-UBA en colaboración con el equipo médico del hospital.
+### WP4: Bioinformática In-Silico de Bajo Costo y Caracterización de Variantes Genéticas (Meses 8-16)
+*   **Sede:** FCEN-UBA.
 *   **Responsable:** Investigador Postulante.
 *   **Metodología:**
-    1.  *Pipeline bioinformático:* Flujo estandarizado de alineamiento (BWA-MEM) y llamado de variantes (GATK HaplotypeCaller, BCFtools) a partir de datos NGS (paneles multigenéticos o WES) de pacientes pediátricos con sospecha de DCP del Hospital Gutiérrez.
-    2.  *Anotación y priorización clínica:* Filtrado de variantes de acuerdo con guías ACMG/AMP en el catálogo de **más de 50 genes asociados** [3, 7], priorizando los genes ODA mayores (*DNAH5, DNAI1*, responsables de >30% de casos) [3], genes con TEM normal (*DNAH11*) [5, 7], y genes de alta agresividad clínica con desorganización microtubular (*CCDC39, CCDC40*) [6, 7].
-    3.  *Correlación Fenotipo-Genotipo:* Modelado estadístico multivariado vinculando la cinética de DHSV (WP2) y la ultraestructura de TEM (WP3) con la presencia de variantes patogénicas bialélicas o mutaciones con codones de terminación prematura (PTC, presentes en hasta 28% de casos) [6].
-    4.  *Epidemiología molecular en Argentina:* Caracterización inédita de frecuencias alélicas en la cohorte local para identificar potenciales variantes fundadoras o recurrentes en el país.
-*   **Entregables:** Base de datos y reporte bioinformático de variantes genéticas de DCP en niños de Argentina con su correspondiente caracterización fenotípica funcional.
+    Con el fin de garantizar una **estrategia de bajo costo que prescinda de costosos reactivos o servicios de secuenciación masiva *de novo***, este paquete de trabajo se desarrollará íntegramente mediante flujos computacionales *in-silico*, minería de repositorios genómicos de acceso abierto y herramientas de software libre:
+    1.  *Minería en repositorios genómicos abiertos:* Recopilación y curaduría sistemática de variantes patogénicas y de significado incierto (VUS) en el catálogo de **más de 50 genes asociados a DCP** [3, 7] desde bases de datos públicas internacionales y regionales (ClinVar, gnomAD v4, 1000 Genomes, Ensembl y LatinGen / ABraOM para poblaciones latinoamericanas).
+    2.  *Pipeline automatizado de anotación y priorización liviana:* Implementación de un flujo en Python / Bash que ejecuta la anotación funcional mediante Variant Effect Predictor (VEP) de Ensembl y SnpEff, combinando herramientas de predicción de patogenicidad *in-silico* de acceso libre (CADD, REVEL, AlphaMissense). El pipeline prioriza variantes en genes ODA mayores (*DNAH5, DNAI1*, responsables de >30% de casos) [3], genes con ultraestructura normal en TEM (*DNAH11*) [5, 7] y genes asociados a fenotipos agresivos con desorganización microtubular (*CCDC39, CCDC40*) [6, 7].
+    3.  *Análisis de variantes de parada prematura (PTC) y modelado estructural:* Identificación de variantes *nonsense* y frameshift que generan codones de terminación prematura (PTC, presentes en hasta un 28% de pacientes) [6], evaluando el impacto conformacional en los complejos axonémicos mediante bases de estructuras predichas (AlphaFold DB / Foldseek).
+    4.  *Generador de reportes clínicos moleculares de código abierto:* Desarrollo de un módulo computacional liviano que permita a los profesionales ingresar archivos de variantes estándar (VCF) y obtener un reporte automatizado estandarizado bajo criterios ACMG/AMP sin costos de licenciamiento privativo.
+*   **Entregables:** Pipeline bioinformático *in-silico* de bajo costo publicado; catálogo estructurado y anotado de variantes en >50 genes de DCP; módulo de generación automatizada de reportes clínicos moleculares.
 
 ---
 
-### WP5: Validación Clínica, Transferencia y Ciencia Abierta (Meses 12-18)
+### WP5: Capacitación a Médicos Especialistas del Hospital Gutiérrez y Liberación en Acceso Abierto (Meses 12-18)
 *   **Sede:** Hospital Gutiérrez / FCEN-UBA.
 *   **Responsable:** Investigador Postulante.
 *   **Metodología:**
-    1.  *Validación clínica ciega:* Estudio de concordancia diagnóstica entre el análisis computacional automatizado y el panel diagnóstico tradicional en una cohorte prospectiva de 40 pacientes con sospecha de DCP derivados al Hospital Gutiérrez.
-    2.  *Capacitación profesional:* Talleres teórico-prácticos para médicos neumonólogos, patólogos y técnicos del hospital en la operación del sistema ambiental y el software analítico.
-    3.  *Ciencia Abierta (Open Science):* Publicación del código fuente completo en GitHub bajo licencia abierta (MIT/GPL), con manuales de usuario y tutoriales de instalación; envío de dos manuscritos científicos a revistas internacionales indexadas de acceso abierto (Q1/Q2); elaboración del informe final de la Beca Leonardo.
-*   **Entregables:** Plataforma validada e integrada en la práctica clínica; software libre publicado; 2 publicaciones científicas internacionales enviadas; memoria final para la Fundación BBVA.
+    Este paquete de trabajo orienta sus actividades a la transferencia tecnológica, la capacitación profesional interdisciplinaria y la consolidación de la ciencia abierta (*Open Science*):
+    1.  *Talleres de capacitación médica especializada:* Dictado de jornadas teórico-prácticas y talleres de entrenamiento dirigidos a médicos neumonólogos, patólogos y bioquímicos del Hospital de Niños Dr. Ricardo Gutiérrez. Los módulos comprenderán la operación de la cámara ambiental termostatizada a 37 °C, la adquisición sincrónica de videomicroscopía a alta velocidad (>200 fps) en el microscopio óptico y la correcta interpretación de los reportes automatizados de CBF, CBP y métricas axonémicas de TEM [1, 2, 5].
+    2.  *Protocolos operativos estándar (SOP) y guías asistenciales:* Elaboración y transferencia de manuales ilustrados de buenas prácticas basados en las recomendaciones de consenso internacional (ERS / PCD Foundation) para la toma adecuada de cepillado nasal y su mantenimiento térmico ex vivo [1, 2, 5].
+    3.  *Liberación del software en código abierto (Open Science):* Publicación de la suite computacional completa en GitHub bajo licencia libre (GPL/MIT), con imágenes de contenedor Docker y entornos Conda documentados para garantizar la instalación y reproducibilidad sin barreras económicas en cualquier institución pública de salud de la región.
+    4.  *Difusión científica y memoria institucional:* Redacción y envío de dos artículos científicos sobre la metodología computacional e instrumentación abierta a revistas internacionales indexadas de acceso abierto (Q1/Q2); presentación de resultados en congresos de microscopía y neumonología; elaboración de la memoria final para la Fundación BBVA.
+*   **Entregables:** Personal médico y técnico del Hospital Gutiérrez formalmente capacitado; manuales de procedimiento y guías de buenas prácticas transferidos; suite de software libre publicada en GitHub; 2 manuscritos científicos internacionales enviados; informe final de la Beca Leonardo.
 
 ---
 
@@ -174,31 +178,31 @@ gantt
 | **M09** | Pipeline de visión por computadora para cálculo de CBF (FFT) y CBP (flujo óptico) operativo en videos piloto. | WP2 | Análisis conjunto mandatario CBF+CBP [2, 5] |
 | **M11** | Interfaz gráfica interactiva (GUI en PyQt/Napari) validada para uso por el personal médico asistencial. | WP2 | Eliminación de subjetividad y sesgo del operador [5] |
 | **M13** | Algoritmo de procesamiento cuantitativo de micrografías de TEM (axonema 9+2 y brazos de dineína) calibrado. | WP3 | Detección objetiva de ODA/IDA en TEM [2, 7] |
-| **M15** | Pipeline bioinformático ejecutado y correlación fenotipo-genotipo completada en la cohorte pediátrica. | WP4 | Análisis de >50 genes y correlación clínica [3, 6, 7] |
-| **M17** | Ensayo de validación clínica comparativa completado y taller de capacitación a profesionales realizado. | WP5 | Transferencia clínica y estándares de cuidado [1, 4] |
+| **M15** | Pipeline bioinformático *in-silico* de bajo costo ejecutado y catálogo de variantes en >50 genes completado. | WP4 | Minería en bases genómicas abiertas [3, 6, 7] |
+| **M17** | Talleres de capacitación a médicos especialistas del Hospital Gutiérrez y transferencia de manuales completados. | WP5 | Estándares de formación y buenas prácticas [1, 4] |
 | **M18** | Liberación de código abierto en GitHub, remisión de artículos científicos y reporte final a Fundación BBVA. | WP5 | Ciencia abierta y difusión preceptiva BBVA [1, 5] |
 
 ---
 
 ## 6. Factibilidad, Gestión de Riesgos y Plan de Mitigación
 
-*   **Factibilidad Institucional y Ética:** La FCEN-UBA proporciona la infraestructura académica, capacidad de cómputo y talleres de instrumentación. La colaboración con los médicos del Hospital de Niños Dr. Ricardo Gutiérrez garantiza el acceso a la cohorte clínica pediátrica y a las muestras de cepillado nasal obtenidas en la práctica asistencial rutinaria. El protocolo de investigación se desarrollará bajo estricta observancia de los principios de la Declaración de Helsinki, las Buenas Prácticas Clínicas (BPC) y la Ley CABA N.º 3.301, contando con la evaluación y aprobación del Comité de Ética en Investigación (CEI) del Hospital Gutiérrez y el consentimiento informado de los representantes legales [1, 4].
+*   **Factibilidad Institucional y Marco Ético Simplificado:** La propuesta posee una factibilidad institucional óptima gracias a la capacidad computacional y de instrumentación de la FCEN-UBA y a la estrecha articulación con los médicos del Hospital Gutiérrez. Al haberse excluido la realización de ensayos clínicos prospectivos o experimentales en pacientes pediátricos, el proyecto no enfrenta barreras bioéticas, objeciones regulatorias ni retrasos en comités de ética que condicionen su ejecución. La calibración del sistema óptico, la cámara ambiental y los algoritmos se llevará a cabo en banco de pruebas con preparaciones de referencia in vitro, especímenes de control y datos retrospectivos anonimizados de repositorios públicos, enfocando la transferencia hacia la capacitación profesional de los médicos del hospital y la liberación de software abierto [1, 4].
 *   **Factibilidad Técnica del Postulante:** El postulante posee trayectoria comprobada en bioanálisis de imágenes, microscopía óptica y electrónica, y bioinformática traslacional, con experiencia previa en desarrollo de software científico y dirección de estudiantes universitarios.
 *   **Matriz de Riesgos y Mitigaciones:**
-    1.  *Riesgo: Muestras de cepillado nasal con moco espeso o discinesias secundarias por inflamación.*  
-        *Mitigación:* Las guías ERS recomiendan descartar artefactos inflamatorios y de muestreo [2, 5]. El algoritmo (WP2) incorpora filtros de varianza temporal para excluir zonas de moco estático y analizar únicamente parches con batido rítmico persistente. Si persiste la duda diagnóstica, se seguirán las pautas de repetir el estudio tras tratamiento antibiótico o diferir el análisis en cultivo [4, 5].
-    2.  *Riesgo: Demoras aduaneras en la importación del sensor CMOS o componentes electrónicos.*  
-        *Mitigación:* Se iniciarán los trámites de importación en el Mes 1. Se dispone provisionalmente de cámaras industriales de alta velocidad de laboratorios de la FCEN-UBA para avanzar en el desarrollo algorítmico del software.
-    3.  *Riesgo: Dificultad para confirmar mutaciones causales en el 30% de pacientes sin variantes NGS conocidas.*  
-        *Mitigación:* La literatura documenta que hasta un 30% de los casos de DCP no presentan mutaciones en los paneles genéticos actuales [3]. La integración de la videomicroscopía funcional cuantitativa (DHSV a >200 fps) permite confirmar el diagnóstico funcional inequívoco aun en ausencia de confirmación molecular [5].
+    1.  *Riesgo: Demoras aduaneras en la importación del sensor CMOS o componentes electrónicos.*  
+        *Mitigación:* Se iniciarán los trámites de importación en el Mes 1. Se dispone provisionalmente de cámaras industriales de laboratorios de la FCEN-UBA para avanzar en el desarrollo de los algoritmos de visión artificial.
+    2.  *Riesgo: Heterogeneidad en formatos de video y bioimágenes de archivo.*  
+        *Mitigación:* El algoritmo de preprocesamiento (WP2) incorpora conversores de formato universales (TIFF, AVI, HDF5) y normalizadores de histograma temporal para procesar datos independientemente del dispositivo de captura.
+    3.  *Riesgo: Dificultad para clasificar variantes genéticas de significado incierto (VUS).*  
+        *Mitigación:* El pipeline bioinformático *in-silico* (WP4) integra múltiples predictores ortogonales de patogenicidad y modelos estructurales basados en AlphaFold DB para brindar una clasificación multifactorial robusta según guías ACMG/AMP.
 
 ---
 
 ## 7. Impacto Esperado, Beneficio Social y Transferencia Sanitaria
 
-1.  **Impacto Directo en la Salud Infantil:** En consonancia con las guías de la Sociedad Argentina de Pediatría [4], un diagnóstico precoz en la primera infancia permite instaurar kinesioterapia respiratoria diaria (PEP, drenaje autógeno) y tratamiento antibiótico dirigido para erradicar patógenos como *P. aeruginosa*, **logrando la reversión de las dilataciones bronquiales cilíndricas incipientes y previniendo el daño pulmonar permanente (bronquiectasias irreversibles)** [1, 2, 4, 6].
+1.  **Impacto en la Salud Infantil y Transferencia Asistencial:** La capacitación brindada a los médicos especialistas del Hospital Gutiérrez y la provisión de una estación de videomicroscopía termostatizada y calibrada deja instalada en el hospital la capacidad técnica para que, una vez tramitadas las autorizaciones correspondientes en etapas posteriores, los profesionales dispongan de herramientas objetivas para un diagnóstico precoz, permitiendo instaurar oportunamente kinesioterapia respiratoria y tratamiento antibiótico que reviertan las dilataciones cilíndricas iniciales y prevengan el daño pulmonar permanente (bronquiectasias irreversibles) [1, 2, 4, 6].
 2.  **Soberanía Tecnológica en Salud Pública:** Se demuestra que la conjunción entre la universidad pública (FCEN-UBA) y el hospital pediátrico permite modernizar instrumental preexistente a una fracción del costo de equipos comerciales cerrados importados, creando capacidad diagnóstica local sustentable.
-3.  **Aporte a la Genómica Pediátrica Nacional:** Generación del primer registro genotípico y fenotípico de DCP en niños de la Argentina, identificando variantes patogénicas prevalentes en nuestra región [3, 7].
+3.  **Aporte a la Genómica Médica de Código Abierto:** Generación de un flujo bioinformático reproducible y de libre uso para la anotación y priorización de variantes de DCP en bases públicas, enriqueciendo los recursos bioinformáticos disponibles para la región [3, 7].
 4.  **Ciencia Abierta y Formación de Recursos Humanos:** Formación de estudiantes de grado universitarios en ingeniería biomédica y computación, capacitación continua de médicos del hospital y liberación del software en acceso abierto para cualquier hospital público de América Latina.
 5.  **Reconocimiento Institucional Preceptivo:** Todos los resultados, publicaciones científicas y presentaciones mencionarán de forma explícita: *«Proyecto realizado con la Beca Leonardo de la Fundación BBVA 2026. Argentina»*.
 

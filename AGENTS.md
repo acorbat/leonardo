@@ -94,14 +94,15 @@ flowchart TD
 *   **WP3: Procesamiento Cuantitativo de Imágenes de MET (Meses 6-14)**
     *   Estandarización del análisis de cortes transversales de axonemas ciliares (geometría 9+2).
     *   Cuantificación de defectos en brazos externos/internos de dineína (ODA/IDA) y translocaciones microtubulares.
-*   **WP4: Análisis Bioinformático de Variantes Genéticas (Meses 8-16)**
-    *   Pipeline bioinformático para priorización de variantes en genes de DCP.
-    *   Correlación multivariada fenotipo ciliar (HSVM + TEM) con variantes genéticas.
-    *   Caracterización de la distribución de variantes en pacientes del Hospital Gutiérrez para entender la epidemiología molecular en Argentina.
-*   **WP5: Transferencia Clínica, Validación y Ciencia Abierta (Meses 12-18)**
-    *   Capacitación al equipo de neumonología y patología del Hospital Gutiérrez.
-    *   Liberación de software/código abierto para la comunidad médica y científica latinoamericana.
-    *   Redacción de informe final, publicaciones internacionales y difusión pública BBVA.
+*   **WP4: Bioinformática In-Silico de Bajo Costo y Caracterización de Variantes (Meses 8-16)**
+    *   Pipeline bioinformático reproducible y de bajo costo para priorización y anotación de variantes patogénicas en >50 genes de DCP (ClinVar, gnomAD, Ensembl, LatinGen).
+    *   Predictores de patogenicidad in-silico (CADD, REVEL, AlphaMissense) y modelado estructural de variantes con codones de terminación prematura (PTC) vía AlphaFold DB.
+    *   Módulo generador de reportes clínicos moleculares automáticos en código abierto sin costos de licencias comerciales.
+*   **WP5: Capacitación a Médicos Especialistas del Hospital Gutiérrez y Ciencia Abierta (Meses 12-18)**
+    *   Prescinde de validación clínica experimental en pacientes pediátricos por carecer de las autorizaciones éticas pertinentes.
+    *   Jornadas de capacitación y entrenamiento teórico-práctico al equipo médico de neumonología y patología del Hospital Gutiérrez en el manejo del instrumental termostatizado y del software.
+    *   Transferencia de manuales de usuario, protocolos operativos estandarizados (SOP) y guías de buenas prácticas.
+    *   Liberación de la suite computacional en GitHub bajo licencia libre (Open Science), redacción de publicaciones internacionales y reporte final BBVA.
 
 ---
 

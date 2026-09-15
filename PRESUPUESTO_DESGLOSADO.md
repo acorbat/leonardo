@@ -18,7 +18,7 @@
 | :---: | :--- | :---: | :---: |
 | **1** | **Hardware e Instrumentación Óptica in situ** | $17.200,00 | 34,4% |
 | **2** | **Equipamiento Informático, Almacenamiento y Cómputo** | $6.800,00 | 13,6% |
-| **3** | **Reactivos, Insumos de Laboratorio y Muestreo Clínico** | $4.600,00 | 9,2% |
+| **3** | **Patrones de Calibración, Insumos de Banco Óptico y Pruebas** | $4.600,00 | 9,2% |
 | **4** | **Formación de RRHH, Estipendios Estudiantiles y Asistencia Técnica** | $10.900,00 | 21,8% |
 | **5** | **Difusión Científica, Publicaciones Open Access y Congresos** | $5.500,00 | 11,0% |
 | **6** | **Costos de Administración Institucional, Retenciones y Bancarios** | $5.000,00 | 10,0% |
@@ -58,14 +58,14 @@
 
 ---
 
-### Rubro 3: Reactivos, Insumos de Laboratorio y Muestreo Clínico ($4.600,00 USD)
-*Insumos necesarios para la recolección estéril y preservación de biopsias nasofaríngeas en pacientes pediátricos en el hospital, así como el procesamiento histológico para microscopía electrónica.*
+### Rubro 3: Patrones de Calibración, Insumos de Banco Óptico y Pruebas Instrumentales ($4.600,00 USD)
+*Insumos de calibración metrológica, preparados de referencia y portaobjetos especiales para la puesta a punto térmica y óptica en banco de pruebas del microscopio y la cámara ambiental sin requerir ensayos invasivos en pacientes.*
 
-1.  **Insumos para Cepillado Nasal y Preservación Celular:**
-    *   *Descripción:* Cepillos citológicos estériles especiales de uso pediátrico (*cytobrushes*), medio de transporte y mantenimiento de epitelio ciliar (Medium 199 / RPMI 1640 con búfer HEPES, suplementado con antibióticos y antimicóticos para evitar contaminación en el muestreo nasofaríngeo), portaobjetos de precisión de alta planitud óptica, cubreobjetos Nº 1.5 y selladores siliconados para cámaras húmedas descartables.
+1.  **Patrones de Calibración Óptica, Micrómetros y Portaobjetos Termoconductores:**
+    *   *Descripción:* Micrómetros de objetivo certificados para calibración espacial de píxeles, portaobjetos termoconductores de alta planitud óptica, cubreobjetos de precisión (Nº 1.5H), microesferas fluorescentes/reflectantes de referencia para velocimetría de flujo óptico en banco de pruebas, y fluidos patrón de viscosidad controlada para simulación de batido.
     *   *Monto:* **$2.400,00 USD**
-2.  **Reactivos para Microscopía Electrónica de Transmisión (TEM):**
-    *   *Descripción:* Glutaraldehído y tetróxido de osmio de grado microscopía para fijación ultraestructural de axonemas, resinas epoxídicas de inclusión (tipo Epon / Araldite), rejillas de microscopía de cobre/níquel con soporte de formvar/carbono, y sales de contrastación (acetato de uranilo y citrato de plomo).
+2.  **Rejillas de Calibración y Materiales de Referencia para TEM:**
+    *   *Descripción:* Rejillas de calibración de aumento certificadas para microscopía electrónica (redes de difracción y estándares de magnificación/resolución), porta-grillas y preparados de referencia para el ajuste de algoritmos de cuantificación ultraestructural.
     *   *Monto:* **$2.200,00 USD**
 
 ---
@@ -114,5 +114,5 @@ El presente presupuesto demuestra una **muy alta costo-efectividad** en el uso d
     1.  La modernización física in situ del equipamiento óptico (cámara de alta velocidad y cámara de incubación a 37 °C).
     2.  Una suite de software de visión computacional y bioinformática libre y de código abierto.
     3.  Capacidad de cuantificación en microscopía electrónica de transmisión (TEM).
-    4.  El primer relevamiento de variantes genéticas de DCP en niños de Argentina.
-    5.  Formación de recursos humanos universitarios en FCEN-UBA y transferencia tecnológica directa al equipo médico asistencial.
+    4.  Un flujo bioinformático in-silico de muy bajo costo para priorización de variantes en >50 genes de DCP.
+    5.  Formación de recursos humanos universitarios en FCEN-UBA, capacitación formal a los médicos especialistas del Hospital Gutiérrez y liberación de la suite de software en acceso abierto (Open Science).
