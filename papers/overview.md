@@ -1,6 +1,6 @@
 # Exhaustive Source-Grounded Summaries of PCD Literature
 
-This document contains exhaustive, source-grounded summaries of each of the seven works included in the notebook, fully detailing their titles, journal citations, authors, publication years, diagnostic frameworks, genetics, and clinical management strategies.
+This document contains exhaustive, source-grounded summaries of each of the eight works included in the notebook, fully detailing their titles, journal citations, authors, publication years, diagnostic frameworks, genetics, and clinical management strategies.
 
 ---
 
@@ -186,3 +186,41 @@ This document contains exhaustive, source-grounded summaries of each of the seve
   * Airway clearance: NAC, hypertonic saline 7% (improves health perception QoL), dornase alfa (rhDNase - case reports show 20% FEV1 increase). Exercise yields greater bronchodilation (PEFR increase) than salbutamol in children. PEP devices, vest therapy, chest PT, autogenic drainage.
   * Experimental Frontiers: SORT LNP-encapsulated *DNAI1* mRNA inhalation (protein expression sustained up to 24 days); AAV and lentiviral vectors, CRISPR/Cas9 gene editing; *NDUFAF2* mitochondrial protein overexpression and NAD+ boosters (nicotinamide riboside, vitamin B3).
   * ENT Management & EPOS 2020: Classifies PCD as Secondary Chronic Rhinosinusitis (SCRS). Saline irrigations and intranasal corticosteroids (INCS) recommended. Adenoidectomy and FESS reserved for refractory cases.
+
+---
+
+### Work 8: Discinesia ciliar primaria: caracterización clínica y tomográfica utilizando una estrategia diagnóstica combinada
+
+* **Title**: Discinesia ciliar primaria: caracterización clínica y tomográfica utilizando una estrategia diagnóstica combinada (*Primary ciliary dyskinesia: clinical and tomographic characterization using a combined diagnostic strategy*)
+* **Journal**: *Archivos Argentinos de Pediatría* (*Arch Argent Pediatr*)
+* **Authors**: Juan E. Balinotti, Martín Medin, Ángela Lacera Rincón, Grecia Frías, María Esnaola Azcoiti, Gabriela Ropelato, Marina Khoury, Alejandro Teper
+* **Year**: 2026
+
+#### Summary
+* **Background & Objectives**: Primary ciliary dyskinesia (PCD) is a clinically heterogeneous, predominantly autosomal recessive disorder caused by abnormal ciliary movement, leading to impaired mucociliary clearance, chronic respiratory stasis, atelectasis, and progressive bronchiectasis. In resource-limited countries like Argentina, diagnostic infrastructure is sparse and published data regarding diagnostic age and baseline clinical features at diagnosis have been lacking. This study aimed to describe the clinical, tomographic, bacteriological, and genetic characteristics of patients referred for suspected PCD using an initial combined diagnostic strategy.
+* **Study Design & Diagnostic Strategy**: Observational, cross-sectional study of 110 patients referred for suspected PCD between June 2022 and February 2025 at the Ciliary Motility Laboratory of Hospital de Niños Ricardo Gutiérrez in Buenos Aires. The combined initial diagnostic protocol comprised:
+  * **Clinical Screening Questionnaires**: ATS-CSQ (American Thoracic Society Clinical Screening Questionnaire) and PICADAR (Primary Ciliary Dyskinesia Rule).
+  * **Nasal Nitric Oxide (nNO)**: Chemiluminescence measurement in patients aged ≥5 years (cutoff <77 nL/min).
+  * **High-Speed Videomicroscopy Analysis (HSVA / VMAV)**: Evaluation of ciliary beat pattern from inferior turbinate biopsies performed in duplicate.
+  * **Genetic Testing**: Next-generation sequencing (40-gene PCD panel or exome sequencing) prioritized for undefined cases or when accessible due to resource constraints.
+* **Patient Classification & Diagnostic Yield** (110 total referrals):
+  1. **Highly Probable PCD (DCP +)** (52 cases, 47%): Defined by abnormal nNO and HSVA in duplicate (age ≥5), or abnormal HSVA in duplicate (age <5), or presence of genetic variants (2 VUS or 1 pathogenic/likely pathogenic variant + VUS) with abnormal HSVA. Nine genetically confirmed cases (2 pathogenic/likely pathogenic variants) were included in this group.
+  2. **Highly Improbable PCD (DCP -)** (54 cases, 49%): Defined by normal nNO and HSVA (or normal HSVA alone in children <5 years).
+  3. **Undefined PCD** (4 cases, 4%): Borderline/equivocal nNO or HSVA with high clinical screening scores (ATS ≥2 or PICADAR ≥5) and pending genetic results.
+* **Diagnostic Age & Clinical Features**:
+  * Overall median age at PCD diagnosis was 8.8 years (IQR 2.8–11.9, range 3 months to 39 years).
+  * **Impact of Organ Laterality**: Diagnosis was established significantly earlier in patients with organ laterality defects / situs inversus (median 4.2 years, IQR 1–11) compared to those without situs inversus (median 10.5 years, IQR 7.8–16).
+  * **DCP (+) vs. DCP (-) Comparisons**: Neonatal respiratory distress (73% vs 13%, p<0.0001), persistent rhinitis starting <6 months of age (81% vs 30%, p<0.0001), persistent wet cough starting <6 months of age (90% vs 23%, p<0.0001), organ laterality defects (57% vs 11%, p<0.0001), and treatment-unresponsive asthma (52% vs 15%, p<0.0001) were significantly more prevalent in the DCP (+) group.
+  * **Screening Score Performance**: 94% of DCP (+) patients met ≥2 ATS-CSQ criteria (vs 22% in DCP -), 90% scored ≥5 on PICADAR (vs 28% in DCP -), and 88% met both thresholds simultaneously (vs 15% in DCP -, p<0.0001).
+* **Diagnostics, Genetics & Bacteriology**:
+  * **nNO Performance**: Nasal NO <77 nL/min was present in 92% of DCP (+) patients aged ≥5 years (median 10.5 nL/min vs 120 nL/min in DCP -, p<0.0001).
+  * **HSVA Beat Patterns in DCP (+)**: Immotile (58%), rigid (24%), uncoordinated (2%), and normal motility (16%).
+  * **Genetics**: Testing was performed in 23 DCP (+) patients, confirming 9 cases (diagnostic yield 39%). *DNAH5* was the most frequently identified gene. Specific variants were detailed across *DNAH5*, *CCDC39*, *CCDC40*, *CCNO*, *DNAAF4*, *DNAAF1*, *DNAH11*, *HYDIN*, *DNAH1*, *DNAH9*, and *RSPH4A*.
+  * **Microbiology**: Most frequent pathogen in sputum cultures was *Haemophilus influenzae* (48%), followed by *Pseudomonas aeruginosa* (34%), *Staphylococcus aureus* MSSA (23%), *Moraxella catarrhalis* (15%), *Streptococcus pneumoniae* (13.4%), MRSA (11%), *Aspergillus* (6%), *Candida* (4%), and *Stenotrophomonas maltophilia* (4%). Six patients (all >13 years) were chronically colonized with *P. aeruginosa* (median age at first isolation: 11 years).
+* **High-Resolution Chest CT Findings**:
+  * Main radiological abnormalities in DCP (+) patients: Mucus plugging / tree-in-bud opacities (55%), bronchiectasis (49%), atelectasis (37%), and ground-glass opacities (12%); only 4% had a completely normal CT.
+  * **Lobar Distribution**: Bronchiectasis predominantly involved the middle lobe (35%), lower lobes (26% right, 26% left), and língula (20%), while upper lobes were preserved (4% right upper, 2% left upper) due to gravity-dependent secretion pooling in lower airway zones.
+* **Discussion & Key Conclusions**:
+  * Diagnosis of PCD in Argentina occurs late (median 8.8 years overall; 10.5 years without situs inversus) relative to European benchmarks (~5.3 years), leading to demonstrable structural lung damage on CT by the time of diagnosis.
+  * In resource-constrained healthcare environments, the initial combined strategy (ATS/PICADAR questionnaires + nNO + duplicate HSVA) successfully excluded PCD in 49% of referrals, avoiding expensive genetic testing in nearly half the cases.
+  * Expanding collaborative networks between medical centers is critical to broaden access to genetic panels, electron microscopy, and immunofluorescence for definitive confirmation.
