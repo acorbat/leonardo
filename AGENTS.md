@@ -128,4 +128,6 @@ flowchart TD
 - [x] `MEMORIA_TECNICA.md` - Memoria técnica completa de 5 páginas (Descripción, WPs, Cronograma, Estado del Arte, Factibilidad).
 - [x] `PRESUPUESTO_DESGLOSADO.md` - Plan financiero y desglose exacto en USD ($50.000 brutos).
 - [x] `MODELO_CARTA_AVAL_HOSPITAL.md` - Modelo formal de carta institucional y aval ético para las autoridades del Hospital Gutiérrez.
+- [x] `CARTA_REFERENCIA_JUAN_BALINOTTI.md` - Carta de referencia oficial del Dr. Juan Balinotti (Hospital Gutiérrez / CONICET).
+- [x] `CARTA_REFERENCIA_HERNAN_GRECCO.md` - Carta de referencia oficial del Dr. Hernán Grecco (FCEN-UBA / CONICET).
 
