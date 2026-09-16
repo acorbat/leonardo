@@ -53,9 +53,9 @@ En el aspecto genético, se conocen más de 50 genes asociados a DCP (>2.000 var
 
 ### 2.2 Novedad y Carácter Innovador
 Frente a equipamientos comerciales cerrados cuyo costo supera los USD 150.000, esta propuesta ofrece una innovación de **muy alta costo-efectividad** basada en:
-1.  **Instrumentación in situ y control ambiental estricto:** Prototipado y fabricación aditiva de una cámara de incubación para platina con control térmico en lazo cerrado a 37 °C ± 0,3 °C y saturación de humedad (>90%), dirigida por estudiantes de grado de la FCEN-UBA, acoplada a un sensor industrial CMOS de alta velocidad (>200 fps) operado por software abierto (*Micro-Manager*) [5].
+1.  **Instrumentación in situ y control ambiental estricto:** Prototipado y fabricación aditiva de una cámara de incubación para platina con control térmico en lazo cerrado a 37 °C ± 0,3 °C y saturación de humedad (>90%), desarrollada con un equipo de dos estudiantes avanzados de grado de Física de la FCEN-UBA mediante impresión 3D, microcontrolador Arduino/ESP32 y sensores de bajo costo (diseño inicial en 4 a 6 meses y seguimiento experimental de 12 meses). Acople de una cámara científica Axiocam 705 mono provista en plaza local vía distribuidor oficial (Bioingeniería) presupuestada en USD 9.000 para cubrir con total seguridad su costo (del orden de USD 8.000) y contingencias de plaza, la cual, operando en una región de interés (ROI) de 512 x 512 píxeles con objetivo de 20x y adaptador 0,5x preexistente, supera los 200 fps con excelente resolución óptica, corrigiendo el sobresampleo innecesario del sistema actual y cumpliendo los estándares internacionales [5].
 2.  **Visión por computadora para DHSV:** Algoritmo que calcula la CBF píxel a píxel mediante Transformada Rápida de Fourier (FFT) y clasifica el CBP utilizando flujo óptico denso (Farnebäck) y kymographs automáticos ortogonales a la pared celular, eliminando el sesgo del observador [5].
-3.  **Cuantificación digital de micrografías de TEM:** Segmentación de axonemas 9+2 y perfilometría radial automatizada para medir densidad de brazos de dineína (ODA/IDA) en micrografías electrónicas de archivo [2, 7].
+3.  **Cuantificación digital y aprendizaje automático en micrografías de TEM:** Detección y segmentación robusta de axonemas 9+2 mediante una combinación de aprendizaje automático y deep learning a través de la metodología **convpaint** (extracción de características profundas convolucionales preentrenadas combinadas con clasificadores Random Forest entrenables con pocas anotaciones), respaldada por la duplicación de horas de TEM y financiamiento de preparación de muestras ultraestructurales, seguida de perfilometría radial automatizada y promediado subaxonémico para medir la integridad de los brazos de dineína (ODA/IDA) [2, 7].
 4.  **Bioinformática In-Silico de Bajo Costo:** Pipeline computacional reproducible para la anotación y priorización clínica de variantes patogénicas en >50 genes, minando bases públicas abiertas sin generar costos de secuenciación masiva *de novo* [3, 6, 7].
 5.  **Transferencia y Capacitación Médica en Open Science:** Capacitación directa a los especialistas del hospital y liberación íntegra del software bajo código abierto, allanando el camino para futuras fases diagnósticas.
 
@@ -70,9 +70,9 @@ La integración de instrumentación óptica in situ de bajo costo (cámara ambie
 Desarrollar, implementar y transferir una plataforma computacional integral de bioimagen, visión artificial y genómica de bajo costo para el diagnóstico de la Disquinesia Ciliar Primaria, ejecutada en la Facultad de Ciencias Exactas y Naturales (UBA) en colaboración con médicos del Hospital de Niños Dr. Ricardo Gutiérrez.
 
 ### Objetivos Específicos
-1.  **OE1:** Diseñar, construir y calibrar una cámara ambiental con control térmico a 37 °C y humedad relativa saturada (>90%), acoplando un sensor digital CMOS industrial de alta velocidad (≥200 fps) al microscopio óptico del hospital mediante software de código abierto (*Micro-Manager*).
+1.  **OE1:** Diseñar y construir una cámara ambiental termostatizada a 37 °C y humedad relativa saturada (>90%) mediante impresión 3D y control electrónico de bajo costo (Arduino/ESP32) con estudiantes de grado, integrando una cámara Axiocam 705 mono acoplada con objetivo 20x y adaptador 0,5x (resolución ROI de 512 x 512 píxeles a >200 fps, corrigiendo el actual sobresampleo óptico) operada mediante software de código abierto (*Micro-Manager*).
 2.  **OE2:** Desarrollar un pipeline computacional de visión artificial en Python para la segmentación del epitelio ciliado, cálculo espectral de CBF píxel a píxel por FFT y cuantificación de descriptores cinéticos de CBP mediante flujo óptico y kymographs.
-3.  **OE3:** Desarrollar un algoritmo de análisis digital de bioimágenes de Microscopía Electrónica de Transmisión (TEM) para la cuantificación objetiva de la geometría axonémica 9+2 y la integridad de los brazos de dineína externos e internos (ODA/IDA).
+3.  **OE3:** Desarrollar un algoritmo de análisis digital de bioimágenes de Microscopía Electrónica de Transmisión (TEM) basado en la combinación de aprendizaje automático y deep learning (**convpaint**) para la detección y segmentación de axonemas, cuantificando la geometría 9+2 y la presencia de brazos de dineína externos e internos (ODA/IDA).
 4.  **OE4:** Implementar un flujo bioinformático *in-silico* de bajo costo para la priorización y anotación funcional de variantes en genes causales de DCP (>50 genes) a partir de repositorios genómicos públicos abiertos, correlacionando los perfiles moleculares con los fenotipos cinéticos (DHSV) y ultraestructurales (TEM).
 5.  **OE5:** Capacitar a los médicos especialistas del Hospital Gutiérrez y liberar el software como herramienta de código abierto (*Open Science*).
 
@@ -88,16 +88,16 @@ gantt
     dateFormat  YYYY-MM
     axisFormat  %m
     section WP1 Hardware & Adquisición
-    Diseño y calibración cámara ambiental 37°C (FCEN-UBA): 2027-03, 4M
-    Integración sensor CMOS alta velocidad (>200 fps)  : 2027-05, 3M
-    Puesta a punto in situ en el microscopio            : 2027-06, 2M
+    Diseño y calibración cámara ambiental (2 est. física): 2027-03, 5M
+    Integración Axiocam 705 mono (>200 fps, ROI 512x512) : 2027-05, 3M
+    Puesta a punto in situ en el microscopio (obj. 20x)   : 2027-06, 2M
     section WP2 Algoritmos DHSV
     Preprocesamiento y segmentación ciliar activa       : 2027-06, 4M
     Cuantificación CBF (FFT) y CBP (Flujo Óptico)      : 2027-08, 5M
     Interfaz gráfica asistencial (PyQt / Napari)        : 2027-11, 4M
     section WP3 Bioimágenes TEM
     Digitalización y curaduría de micrografías axonema  : 2027-09, 4M
-    Algoritmo de cuantificación 9+2 y dineína (ODA/IDA) : 2027-11, 5M
+    Detección con convpaint y análisis ODA/IDA (9+2)    : 2027-11, 5M
     section WP4 Bioinformática In-Silico
     Pipeline in-silico y minería en bases abiertas     : 2027-12, 5M
     Priorización funcional de variantes en >50 genes    : 2028-03, 4M
@@ -110,20 +110,17 @@ gantt
 ---
 
 ### WP1: Modernización Instrumental in-situ y Control Ambiental (Meses 1-6)
-*   **Sede:** Laboratorio en FCEN-UBA / Instalación en Hospital Gutiérrez.
-*   **Responsable:** Investigador Postulante (dirigiendo a 2 estudiantes avanzados de grado de FCEN-UBA / Ingeniería).
 *   **Metodología:**
-    1.  *Cámara de incubación ambiental:* Modelado en software CAD de una cámara cerrada adaptada a la platina. Chasis fabricado por manufactura en impresión 3D. Implementación de circuito de control en lazo cerrado PID con microcontrolador ESP32 o Arduino y sensores térmicos, garantizando **37 °C ± 0,3 °C** en la muestra para neutralizar el sesgo térmico (donde la CBF desciende a 6,3–9,0 Hz a 32 °C o menos) [5, 7]. Reservorio de humidificación para humedad relativa >90%, evitando la desecación durante la observación (ventana de estabilidad celular de 3 a 9 horas) [5].
-    2.  *Sensor CMOS de alta velocidad:* Montaje de cámara industrial monocromática USB 3.0 con obturador global (*global shutter*), velocidad de muestreo de **200 a 400 fps** a resolución útil diagnóstica (800x600 px), y lente de reducción óptica C-mount acoplada al puerto trinocular del microscopio, cumpliendo con el rango de 120–500 fps estipulado por las guías [5].
-    3.  *Software de control:* Configuración de adquisición en **Micro-Manager** / Python para grabación continua en memoria RAM de alta velocidad.
-*   **Entregables:** Cámara ambiental calibrada a 37 °C; microscopio adaptado adquiriendo video a >200 fps.
+    1.  *Cámara de incubación ambiental (diseño, validación e implementación):* El modelado, construcción, calibración y validación experimental de la cámara ambiental termostatizada para la platina del microscopio se llevará a cabo con un equipo de dos estudiantes avanzados de grado de la Licenciatura en Ciencias Físicas de la FCEN-UBA con dedicación anual de 12 meses (estipendio de $350 USD/mes cada uno). Los estudiantes de grado se encargarán específicamente de diseñar, validar e implementar el sistema de control de temperatura y humedad. La estructura hermética se fabricará principalmente mediante impresión 3D (filamento termoplástico PETG). Se desarrollará un lazo de control térmico PID de alta precisión comandado por un microcontrolador de bajo costo (Arduino o ESP32) acoplado a sensores de temperatura digitales de bajo costo, asegurando una temperatura de muestra homogénea de **37 °C ± 0,3 °C** para suprimir el sesgo térmico sobre la CBF (que decae a 6,3–9,0 Hz a temperaturas subfisiológicas de ≤32 °C) [5, 7]. Se incluirá un reservorio para saturación de humedad (>90%), previniendo la evaporación del menisco durante la ventana de viabilidad ciliar de 3 a 9 horas [5].
+    2.  *Sensor de alta velocidad y optimización del muestreo óptico:* Se incorporará una cámara científica **Axiocam 705 mono**, provista localmente a través de su distribuidor oficial en Argentina (Bioingeniería), con un costo de plaza del orden de 8.000 USD y presupuestada con total holgura en 9.000 USD para absorber contingencias arancelarias o de cotización y asegurar la concreción del gasto sin riesgos aduaneros. Conforme a las recomendaciones internacionales que exigen capturar a 120–500 fps [5], la Axiocam 705 mono superará holgadamente los **200 fps** configurando una región de interés (ROI) de **512 x 512 píxeles**. El sistema óptico se optimizará empleando el adaptador C-mount de reducción de 0,5x ya disponible en el microscopio y seleccionando un objetivo de **20x** de alta apertura numérica, resolviendo de forma directa el sobresampleo óptico que aqueja a la configuración actual (donde se utilizan aumentos excesivos que reducen el campo de observación y la luminosidad sin aportar ganancia de resolución útil) y asegurando una excelente calidad diagnóstica.
+    3.  *Software de control y estación de adquisición in situ:* Configuración de la secuencia de captura en **Micro-Manager** y scripts en Python para streaming directo a memoria RAM y almacenamiento sin pérdida de fotogramas, operando sobre la computadora provista para el hospital (laptop o de escritorio, USD 2.000) con 32–64 GB RAM y disco NVMe ultrarrápido.
+*   **Entregables:** Cámara ambiental termostatizada a 37 °C fabricada en impresión 3D con control Arduino/ESP32; estación de videomicroscopía adaptada con cámara Axiocam 705 mono adquiriendo a >200 fps (ROI de 512x512 px, objetivo 20x) y computadora de adquisición in situ.
 
 ---
 
 ### WP2: Pipeline Computacional de Visión Artificial para DHSV (Meses 4-12)
-*   **Sede:** FCEN-UBA.
-*   **Responsable:** Investigador Postulante.
 *   **Metodología:**
+    Con la dedicación anual de un estudiante de finalización de carrera de la FCEN-UBA (12 meses, estipendio de $350 USD/mes) enfocado en el análisis de bioimágenes de videomicroscopía y microscopía electrónica, operando sobre la estación de trabajo GPU de alto rendimiento (USD 3.000) instalada en la facultad:
     1.  *Preprocesamiento:* Corrección de desplazamiento de tejido mediante correlación de fase y realce de bordes.
     2.  *Segmentación automatizada:* Detección de regiones epiteliales activas mediante varianza temporal píxel a píxel, discriminando moco estático, eritrocitos y detritos celulares.
     3.  *Cuantificación de CBF (Frecuencia):* Análisis espectral de potencia mediante **Transformada Rápida de Fourier (FFT)** aplicada a la serie temporal de intensidad píxel a píxel. Generación de mapas de calor de frecuencia dominante (rango fisiológico: 10–15 Hz a 37 °C), CBF media y áreas inmóviles (<4 Hz) [5, 7].
@@ -133,21 +130,17 @@ gantt
 ---
 
 ### WP3: Procesamiento Cuantitativo de Bioimágenes en TEM (Meses 6-14)
-*   **Sede:** FCEN-UBA en articulación con el Servicio de Patología del Hospital Gutiérrez.
-*   **Responsable:** Investigador Postulante.
 *   **Metodología:**
-    1.  *Curaduría y digitalización:* Digitalización calibrada de micrografías electrónicas de archivo de cortes transversales de axonemas ciliares respiratorios.
-    2.  *Segmentación geométrica del axonema:* Algoritmo basado en transformada circular de Hough para localizar el par central de microtúbulos simples y los 9 dobletes periféricos de microtúbulos A y B (geometría canónica 9+2) [2, 7].
-    3.  *Cuantificación de brazos de dineína (ODA/IDA):* Perfilometría radial de intensidad óptica normalizada en las coordenadas del microtúbulo A para cuantificar objetivamente la presencia o ausencia de brazos de dineína externos (ODA) e internos (IDA). Aplicación de promediado de partículas 2D (*sub-axonemal averaging*) para optimizar la relación señal-ruido [2, 7].
-*   **Entregables:** Algoritmo validado de cuantificación ultraestructural con reporte automatizado de integridad axonémica.
+    1.  *Curaduría y digitalización:* Digitalización y calibración espacial de micrografías electrónicas de archivo de cortes transversales de axonemas ciliares respiratorios del Servicio de Patología del Hospital Gutiérrez y repositorios públicos.
+    2.  *Detección y segmentación axonémica con aprendizaje automático y deep learning (convpaint):* La detección y segmentación a nivel de píxel de los axonemas se realizará implementando **convpaint**, una metodología híbrida que combina el aprendizaje automático clásico con representaciones profundas (*deep learning*), a cargo del estudiante de finalización de carrera. Mediante la extracción de mapas de características multiescala generados por capas intermedias de redes neuronales convolucionales preentrenadas (backbone convolucional profundo), se entrena interactivamente un clasificador supervisado liviano (*Random Forest*). Esta técnica supera las dificultades de la escasa disponibilidad de muestras anotadas en TEM y la variabilidad de contraste, permitiendo segmentar de forma precisa el anillo periférico de los 9 dobletes microtubulares y el par central frente al fondo celular y detritos [2, 7].
+    3.  *Cuantificación de brazos de dineína (ODA/IDA) y Servicio Integral de Microscopía Electrónica:* Sobre los axonemas segmentados por convpaint, se aplicará perfilometría radial de intensidad óptica normalizada en las posiciones angulares del microtúbulo A para cuantificar la densidad de brazos de dineína externos (ODA) e internos (IDA). Se integrará alineamiento y promediado subaxonémico 2D (*sub-axonemal averaging*) para maximizar la relación señal-ruido, reportando la proporción de defectos ultraestructurales según guías internacionales [2, 7]. Para la obtención de imágenes calibradas, se contrata el servicio integral del centro de microscopía electrónica (presupuestado en un único ítem de $2.500 USD) que incluye tanto la preparación de muestras biológicas (fijación con glutaraldehído y OsO4, inclusión en resina epoxi, ultramicrotomía de 70–90 nm y tinción de contraste) como las horas de uso de microscopio TEM.
+*   **Entregables:** Algoritmo híbrido de segmentación (convpaint) y reporte cuantitativo automatizado de integridad axonémica y brazos de dineína en TEM.
 
 ---
 
 ### WP4: Bioinformática In-Silico de Bajo Costo y Caracterización de Variantes Genéticas (Meses 8-16)
-*   **Sede:** FCEN-UBA.
-*   **Responsable:** Investigador Postulante.
 *   **Metodología:**
-    Con el fin de garantizar una **estrategia de bajo costo que prescinda de costosos reactivos o servicios de secuenciación masiva *de novo***, este paquete de trabajo se desarrollará íntegramente mediante flujos computacionales *in-silico*, minería de repositorios genómicos de acceso abierto y herramientas de software libre:
+    Con el fin de garantizar una **estrategia de bajo costo que prescinda de costosos reactivos o servicios de secuenciación masiva *de novo***, este paquete de trabajo se desarrollará íntegramente mediante flujos computacionales *in-silico*, minería de repositorios genómicos de acceso abierto y herramientas de software libre, articulando con **pasantes de la carrera de Ciencia de Datos de la FCEN-UBA** que realizarán proyectos de análisis cortos y específicos integrados en su plan formativo:
     1.  *Minería en repositorios genómicos abiertos:* Recopilación y curaduría sistemática de variantes patogénicas y de significado incierto (VUS) en el catálogo de **más de 50 genes asociados a DCP** [3, 7] desde bases de datos públicas internacionales y regionales (ClinVar, gnomAD v4, 1000 Genomes, Ensembl y LatinGen / ABraOM para poblaciones latinoamericanas).
     2.  *Pipeline automatizado de anotación y priorización liviana:* Implementación de un flujo en Python / Bash que ejecuta la anotación funcional mediante Variant Effect Predictor (VEP) de Ensembl y SnpEff, combinando herramientas de predicción de patogenicidad *in-silico* de acceso libre (CADD, REVEL, AlphaMissense). El pipeline prioriza variantes en genes ODA mayores (*DNAH5, DNAI1*, responsables de >30% de casos) [3], genes con ultraestructura normal en TEM (*DNAH11*) [5, 7] y genes asociados a fenotipos agresivos con desorganización microtubular (*CCDC39, CCDC40*) [6, 7].
     3.  *Análisis de variantes de parada prematura (PTC) y modelado estructural:* Identificación de variantes *nonsense* y frameshift que generan codones de terminación prematura (PTC, presentes en hasta un 28% de pacientes) [6], evaluando el impacto conformacional en los complejos axonémicos mediante bases de estructuras predichas (AlphaFold DB / Foldseek).
@@ -157,8 +150,6 @@ gantt
 ---
 
 ### WP5: Capacitación a Médicos Especialistas del Hospital Gutiérrez y Liberación en Acceso Abierto (Meses 12-18)
-*   **Sede:** Hospital Gutiérrez / FCEN-UBA.
-*   **Responsable:** Investigador Postulante.
 *   **Metodología:**
     Este paquete de trabajo orienta sus actividades a la transferencia tecnológica, la capacitación profesional interdisciplinaria y la consolidación de la ciencia abierta (*Open Science*):
     1.  *Talleres de capacitación médica especializada:* Dictado de jornadas teórico-prácticas y talleres de entrenamiento dirigidos a médicos neumonólogos, patólogos y bioquímicos del Hospital de Niños Dr. Ricardo Gutiérrez. Los módulos comprenderán la operación de la cámara ambiental termostatizada a 37 °C, la adquisición sincrónica de videomicroscopía a alta velocidad (>200 fps) en el microscopio óptico y la correcta interpretación de los reportes automatizados de CBF, CBP y métricas axonémicas de TEM [1, 2, 5].
@@ -173,11 +164,11 @@ gantt
 
 | Mes | Hito Clave / Entregable | Paquete | Respaldo en Literatura |
 | :---: | :--- | :---: | :--- |
-| **M03** | Prototipo de cámara ambiental termostatizada (37 °C) calibrado en laboratorio de FCEN-UBA. | WP1 | Requisito de temperatura fisiológica [5, 7] |
-| **M06** | Sensor CMOS de alta velocidad (>200 fps) adaptado al microscopio del Hospital Gutiérrez con Micro-Manager. | WP1 | Estándar ERS de muestreo a 120–500 fps [5] |
+| **M03** | Prototipo de cámara ambiental termostatizada (37 °C) en impresión 3D y Arduino/ESP32 calibrado por estudiantes de física. | WP1 | Requisito de temperatura fisiológica [5, 7] |
+| **M06** | Cámara Axiocam 705 mono (>200 fps, ROI 512x512, obj. 20x) adaptada al microscopio del Hospital Gutiérrez con Micro-Manager. | WP1 | Estándar ERS de muestreo a 120–500 fps [5] |
 | **M09** | Pipeline de visión por computadora para cálculo de CBF (FFT) y CBP (flujo óptico) operativo en videos piloto. | WP2 | Análisis conjunto mandatario CBF+CBP [2, 5] |
 | **M11** | Interfaz gráfica interactiva (GUI en PyQt/Napari) validada para uso por el personal médico asistencial. | WP2 | Eliminación de subjetividad y sesgo del operador [5] |
-| **M13** | Algoritmo de procesamiento cuantitativo de micrografías de TEM (axonema 9+2 y brazos de dineína) calibrado. | WP3 | Detección objetiva de ODA/IDA en TEM [2, 7] |
+| **M13** | Módulo de segmentación axonémica en TEM mediante convpaint y cuantificación de brazos de dineína (ODA/IDA) calibrado. | WP3 | Detección objetiva de ODA/IDA en TEM [2, 7] |
 | **M15** | Pipeline bioinformático *in-silico* de bajo costo ejecutado y catálogo de variantes en >50 genes completado. | WP4 | Minería en bases genómicas abiertas [3, 6, 7] |
 | **M17** | Talleres de capacitación a médicos especialistas del Hospital Gutiérrez y transferencia de manuales completados. | WP5 | Estándares de formación y buenas prácticas [1, 4] |
 | **M18** | Liberación de código abierto en GitHub, remisión de artículos científicos y reporte final a Fundación BBVA. | WP5 | Ciencia abierta y difusión preceptiva BBVA [1, 5] |
@@ -186,11 +177,18 @@ gantt
 
 ## 6. Factibilidad, Gestión de Riesgos y Plan de Mitigación
 
-*   **Factibilidad Institucional y Marco Ético Simplificado:** La propuesta posee una factibilidad institucional óptima gracias a la capacidad computacional y de instrumentación de la FCEN-UBA y a la estrecha articulación con los médicos del Hospital Gutiérrez. Al haberse excluido la realización de ensayos clínicos prospectivos o experimentales en pacientes pediátricos, el proyecto no enfrenta barreras bioéticas, objeciones regulatorias ni retrasos en comités de ética que condicionen su ejecución. La calibración del sistema óptico, la cámara ambiental y los algoritmos se llevará a cabo en banco de pruebas con preparaciones de referencia in vitro, especímenes de control y datos retrospectivos anonimizados de repositorios públicos, enfocando la transferencia hacia la capacitación profesional de los médicos del hospital y la liberación de software abierto [1, 4].
-*   **Factibilidad Técnica del Postulante:** El postulante posee trayectoria comprobada en bioanálisis de imágenes, microscopía óptica y electrónica, y bioinformática traslacional, con experiencia previa en desarrollo de software científico y dirección de estudiantes universitarios.
+*   **Factibilidad Institucional y Capacidad Preexistente (Ítems de Costo Nulo):** La viabilidad técnica y operativa de la propuesta está plenamente garantizada gracias al ecosistema de investigación de la FCEN-UBA y a la articulación con el Hospital Gutiérrez. El presupuesto solicitado se optimiza significativamente debido a que una porción crítica de los requerimientos ya se encuentra disponible sin generar costos para el proyecto:
+    1.  *Adaptador C-mount:* El microscopio óptico del hospital ya dispone del lente de reducción 0,5x necesario para acoplar la Axiocam 705 mono.
+    2.  *Infraestructura de cómputo y servidores preexistente:* La FCEN-UBA cuenta con clústeres de cálculo de alto rendimiento y servidores dedicados para almacenamiento masivo, resguardo de repositorios y procesamiento bioinformático, complementando a costo cero el equipamiento informático específico presupuestado (la computadora de USD 2.000 —laptop o de escritorio— para adquisición in situ en el hospital y la estación de trabajo GPU de USD 3.000 para el desarrollo de los estudiantes en la FCEN-UBA).
+    3.  *Taller mecánico de precisión propio:* El maquinado y ajuste de la platina térmica de aluminio será efectuado íntegramente por el Taller Mecánico de la FCEN-UBA, sin erogaciones de tercerización técnica.
+    4.  *Reactivos e insumos de calibración:* Los reactivos químicos, patrones micrométricos de calibración espacial y soluciones buffer son aportados por los laboratorios de FCEN-UBA y del hospital.
+    5.  *Pasantes de ciencia de datos:* La facultad dispone de estudiantes de la Licenciatura en Ciencia de Datos que colaboran en proyectos académicos cortos y específicos de minería genómica sin demandar líneas presupuestarias directas.
+    6.  *Software de código abierto:* Toda la plataforma se apoya en librerías y entornos libres (Python, Micro-Manager, Napari, VEP, AlphaFold DB), eliminando licencias comerciales.
+    7.  *Marco ético simplificado:* Al no realizarse ensayos clínicos invasivos en pacientes pediátricos en esta fase, el proyecto prescinde de aprobaciones éticas complejas, focalizándose en desarrollo instrumental, bioimágenes in vitro/retrospectivas y capacitación médica [1, 4].
+*   **Masa Crítica Multidisciplinaria y Capacidad de Liderazgo del Postulante:** La FCEN-UBA reúne a una comunidad científica de excelencia con expertos, investigadores y estudiantes dedicados a las disciplinas troncales del proyecto: **biología, física, computación y ciencia de datos**. Este entorno brinda un respaldo formativo y conceptual permanente. Asimismo, dada la sólida trayectoria del investigador postulante y su **experiencia comprobada coordinando y dirigiendo proyectos multidisciplinarios** (articulando instrumentación física, desarrollo de algoritmos de visión por computadora, bioanálisis de imágenes y diálogo clínico con el sector médico), el proyecto cuenta con el liderazgo idóneo para ejecutarse con total solvencia técnica y rigor metodológico.
 *   **Matriz de Riesgos y Mitigaciones:**
-    1.  *Riesgo: Demoras aduaneras en la importación del sensor CMOS o componentes electrónicos.*  
-        *Mitigación:* Se iniciarán los trámites de importación en el Mes 1. Se dispone provisionalmente de cámaras industriales de laboratorios de la FCEN-UBA para avanzar en el desarrollo de los algoritmos de visión artificial.
+    1.  *Riesgo: Demoras aduaneras o de provisión en la adquisición de equipamiento.*  
+        *Mitigación:* La cámara científica Axiocam 705 mono se adquiere en plaza local a través del distribuidor oficial en Argentina (Bioingeniería), eliminando trámites aduaneros complejos y demoras de importación. Asimismo, los componentes de la cámara ambiental corresponden a manufactura aditiva y electrónica comercial accesible localmente (Arduino/ESP32). Se dispone preventivamente de cámaras en laboratorios de FCEN-UBA para avanzar en el desarrollo de visión artificial.
     2.  *Riesgo: Heterogeneidad en formatos de video y bioimágenes de archivo.*  
         *Mitigación:* El algoritmo de preprocesamiento (WP2) incorpora conversores de formato universales (TIFF, AVI, HDF5) y normalizadores de histograma temporal para procesar datos independientemente del dispositivo de captura.
     3.  *Riesgo: Dificultad para clasificar variantes genéticas de significado incierto (VUS).*  
@@ -203,7 +201,7 @@ gantt
 1.  **Impacto en la Salud Infantil y Transferencia Asistencial:** La capacitación brindada a los médicos especialistas del Hospital Gutiérrez y la provisión de una estación de videomicroscopía termostatizada y calibrada deja instalada en el hospital la capacidad técnica para que, una vez tramitadas las autorizaciones correspondientes en etapas posteriores, los profesionales dispongan de herramientas objetivas para un diagnóstico precoz, permitiendo instaurar oportunamente kinesioterapia respiratoria y tratamiento antibiótico que reviertan las dilataciones cilíndricas iniciales y prevengan el daño pulmonar permanente (bronquiectasias irreversibles) [1, 2, 4, 6].
 2.  **Soberanía Tecnológica en Salud Pública:** Se demuestra que la conjunción entre la universidad pública (FCEN-UBA) y el hospital pediátrico permite modernizar instrumental preexistente a una fracción del costo de equipos comerciales cerrados importados, creando capacidad diagnóstica local sustentable.
 3.  **Aporte a la Genómica Médica de Código Abierto:** Generación de un flujo bioinformático reproducible y de libre uso para la anotación y priorización de variantes de DCP en bases públicas, enriqueciendo los recursos bioinformáticos disponibles para la región [3, 7].
-4.  **Ciencia Abierta y Formación de Recursos Humanos:** Formación de estudiantes de grado universitarios en ingeniería biomédica y computación, capacitación continua de médicos del hospital y liberación del software en acceso abierto para cualquier hospital público de América Latina.
+4.  **Ciencia Abierta y Formación de Recursos Humanos:** Formación integral de tres estudiantes en FCEN-UBA (dos estudiantes avanzados de grado de Física para hardware ambiental y un estudiante de finalización de carrera para análisis de bioimágenes de videomicroscopía y TEM por 12 meses c/u), complementada con la formación de pasantes de ciencia de datos, capacitación médica continua y liberación del software en acceso abierto para cualquier hospital público de América Latina.
 5.  **Reconocimiento Institucional Preceptivo:** Todos los resultados, publicaciones científicas y presentaciones mencionarán de forma explícita: *«Proyecto realizado con la Beca Leonardo de la Fundación BBVA 2026. Argentina»*.
 
 ---

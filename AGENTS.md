@@ -84,18 +84,19 @@ flowchart TD
 
 ### Paquetes de Trabajo (WPs):
 *   **WP1: Modernización e Instrumentación Óptica in situ (Meses 1-6)**
-    *   Diseño y construcción de cámara ambiental de bajo costo pero alta precisión (control de temperatura a 37°C ± 0.5°C y saturación de humedad) supervisando estudiantes de grado.
-    *   Integración de sensor digital de alta velocidad (≥120-200 fps) al microscopio existente.
-    *   Implementación de software libre de adquisición controlada (Micro-Manager / PyQt / OpenCV).
+    *   Diseño, validación e implementación de cámara ambiental de bajo costo (control térmico a 37 °C ± 0,3 °C y saturación de humedad) con 2 estudiantes avanzados de física de FCEN-UBA (estipendio de 12 meses x $350/mes c/u) mediante impresión 3D, Arduino/ESP32 y sensores de bajo costo.
+    *   Integración de cámara científica Axiocam 705 mono (>200 fps en ROI de 512x512 píxeles con objetivo de 20x y adaptador 0,5x existente, optimizando el muestreo óptico; presupuestada en USD 9.000 para cubrir con holgura su costo de plaza de ~USD 8.000).
+    *   Adquisición automatizada mediante software de código abierto (*Micro-Manager* / Python).
 *   **WP2: Pipeline Computacional para Videomicroscopía de Alta Velocidad (Meses 4-12)**
-    *   Algoritmo de segmentación de zonas ciliadas viables y descarte automático de detritos.
+    *   Algoritmo de segmentación de zonas ciliadas viables y descarte automático de detritos, con apoyo de 1 estudiante de finalización de carrera (12 meses x $350/mes).
     *   Cuantificación de Frecuencia de Batido Ciliar (CBF) por transformada rápida de Fourier (FFT) píxel a píxel.
     *   Análisis de Patrón de Batido Ciliar (CBP) mediante kymographs, tracking de trayectorias ciliares y descriptores de asimetría y disquinesia.
-*   **WP3: Procesamiento Cuantitativo de Imágenes de MET (Meses 6-14)**
-    *   Estandarización del análisis de cortes transversales de axonemas ciliares (geometría 9+2).
-    *   Cuantificación de defectos en brazos externos/internos de dineína (ODA/IDA) y translocaciones microtubulares.
+*   **WP3: Procesamiento Cuantitativo de Imágenes de TEM con Aprendizaje Automático (Meses 6-14)**
+    *   Detección y segmentación ultraestructural de axonemas ciliares (geometría 9+2) mediante la combinación de aprendizaje automático y deep learning con **convpaint**, a cargo del estudiante de finalización de carrera.
+    *   Servicio integral de microscopía electrónica de transmisión (preparación y procesamiento ultraestructural de muestras y horas de uso de TEM presupuestadas en $2.500 USD).
+    *   Cuantificación de defectos en brazos externos/internos de dineína (ODA/IDA) mediante perfilometría radial y promediado subaxonémico.
 *   **WP4: Bioinformática In-Silico de Bajo Costo y Caracterización de Variantes (Meses 8-16)**
-    *   Pipeline bioinformático reproducible y de bajo costo para priorización y anotación de variantes patogénicas en >50 genes de DCP (ClinVar, gnomAD, Ensembl, LatinGen).
+    *   Pipeline bioinformático reproducible y de bajo costo para priorización y anotación de variantes patogénicas en >50 genes de DCP (ClinVar, gnomAD, Ensembl, LatinGen), articulando con pasantes de ciencia de datos que realizan proyectos cortos y específicos.
     *   Predictores de patogenicidad in-silico (CADD, REVEL, AlphaMissense) y modelado estructural de variantes con codones de terminación prematura (PTC) vía AlphaFold DB.
     *   Módulo generador de reportes clínicos moleculares automáticos en código abierto sin costos de licencias comerciales.
 *   **WP5: Capacitación a Médicos Especialistas del Hospital Gutiérrez y Ciencia Abierta (Meses 12-18)**
