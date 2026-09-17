@@ -1,0 +1,11 @@
+[workspace]
+authors = ["Agustin Corbat <acorbat@df.uba.ar>"]
+channels = ["conda-forge"]
+name = "leonardo"
+platforms = ["win-64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+tectonic = ">=0.17.0,<0.18"
