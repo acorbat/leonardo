@@ -62,19 +62,17 @@ Frente a la complejidad de las guías internacionales, el \textbf{Hospital Guti�
 
 \subsection*{3. Estado del Arte, Innovación y Plan de Trabajo}
 
-Las directrices internacionales (\textit{European Respiratory Society}, ERS) establecen que el diagnóstico de DCP requiere videomicroscopía de alta velocidad (HSVM; sensibilidad 0,95--1,00, especificidad 0,93--0,95) y desaconsejan enfáticamente utilizar la frecuencia de batido ciliar (CBF) de manera aislada sin el análisis conjunto del patrón de batido (CBP), dado que mutaciones como en \textit{DNAH11} generan cilias con frecuencias normales o hipercinéticas pero con un patrón rígido e inefectivo de baja amplitud angular \cite{Shapiro2015,Bricmont2021,Wrona2025}. Sin embargo, los métodos actuales enfrentan barreras críticas: (i) la microscopía electrónica de transmisión (TEM) arroja resultados normales o no concluyentes en el \textbf{20--30\% de los pacientes confirmados} (asociados a genes como \textit{DNAH11, DRC2, OFD1, GAS2L2, LRRC56, CFAP57, RSPH1}), haciendo que la evaluación funcional sea insustituible \cite{Bricmont2021,Wrona2025}; (ii) ausencia de control ambiental en el microscopio clínico, donde la termolabilidad ciliar (la CBF decae a 6,3--9,0 Hz a $\le$32 °C frente al rango fisiológico de 10--15 Hz a 37 °C) y la evaporación del medio provocan discinesias secundarias y falsos diagnósticos \cite{Bricmont2021,Wrona2025}; (iii) subjetividad y lentitud del análisis visual manual; y (iv) barreras económicas prohibitivas, con estaciones comerciales privativas que superan los USD 150.000 y paneles NGS comerciales inaccesibles para el hospital público.
-
-Frente a estas barreras, el presente proyecto se postula en el área de \textbf{Ciencias de la Computación, Ciencia de Datos e Inteligencia Artificial} con un enfoque de innovación disruptiva y beneficio social directo mediante \textbf{estandarización de la adquisición in situ, nuevos flujos de análisis de imágenes y modelos de visión artificial y flujos bioinformáticos \textit{in-silico}}. Esta estrategia permite reducir drásticamente los costos operativos, democratizar el acceso al diagnóstico en el hospital público pediátrico y descubrir nuevos parámetros clínicos. Se parte de la hipótesis de que la modernización instrumental controlada acoplada a algoritmos abiertos de visión computacional y análisis genómico dotará al hospital público de una plataforma cuantitativa, objetiva y reproducible según estándares internacionales, eliminando la subjetividad del operador y democratizando la medicina de precisión pediátrica. Las ventajas e innovaciones se estructuran en \textbf{cinco paquetes de trabajo (WPs)}:
+Las directrices internacionales (ERS/ATS) establecen que el diagnóstico de DCP requiere videomicroscopía de alta velocidad (HSVM) para evaluar conjuntamente la frecuencia (CBF) y el patrón de batido (CBP), resultando insustituible frente al 20--30\% de casos con ultraestructura normal en microscopía electrónica (TEM) \cite{Shapiro2015,Bricmont2021,Wrona2025}. Sin embargo, su traslación a la salud pública enfrenta barreras críticas: la termolabilidad ciliar sin control ambiental (caída de CBF a $\le$32\,°C), la subjetividad del análisis visual manual y el costo prohibitivo del equipamiento privativo. Para superar estas limitaciones, este proyecto propone una plataforma computacional abierta en el área de \textbf{Ciencias de la Computación, Ciencia de Datos e Inteligencia Artificial}, articulando \textbf{estandarización instrumental in situ, visión artificial para HSVM y TEM, y análisis bioinformático \textit{in-silico}} en \textbf{cinco paquetes de trabajo (WPs)}:
 
 \subsubsection*{WP1: Modernización Instrumental in-situ y Control Ambiental}
 
-\textbf{Problema que soluciona:} En visión artificial rige el principio \textit{garbage in, garbage out}: ningún algoritmo puede corregir datos biológicos adquiridos bajo artefactos térmicos o submuestreo temporal (\textit{aliasing}). La motilidad ciliar requiere 37 °C y humedad saturada (>90\%) para preservar la frecuencia fisiológica y evitar discinesias secundarias por evaporación en las 3--9 h de viabilidad \textit{ex vivo} \cite{Bricmont2021}.
+\textbf{Problema que soluciona:} La termolabilidad y deshidratación ciliar a temperatura ambiente alteran el batido fisiológico induciendo discinesias secundarias y falsos diagnósticos \cite{Bricmont2021}.
 
 \textbf{Metodología y tareas:} Con la dedicación de 2 estudiantes de grado de FCEN-UBA y la colaboración del personal técnico de FCEN-UBA:
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
     \item \textbf{WP1.1: Cámara de incubación ambiental:} Diseño, construcción y calibración de una cámara hermética termostatizada para la platina mediante impresión 3D, con reservorio de humedad saturada (>90\%) y lazo PID comandado por microcontrolador (Arduino/ESP32) acoplado a sensores digitales, garantizando \textbf{37 °C $\pm$ 0,3 °C}, a cargo de 2 estudiantes avanzados de Física de la FCEN-UBA.
-    \item \textbf{WP1.2: Cámara de alta velocidad:} Integración de una cámara científica de alta velocidad ( por ejemplo Axiocam 705 mono alcanza >200 fps en ROI de 512$\times$512 px, evitando aliasing, con distribuidor local). Optimización del tren óptico mediante el adaptador C-mount reductor de 0,5x existente y un objetivo de alta apertura numérica, resolviendo el sobresampleo óptico actual y maximizando luminosidad y campo visual.
+    \item \textbf{WP1.2: Cámara de alta velocidad:} Integración de cámara científica de alta velocidad (>200 fps en ROI de 512$\times$512 px) y optimización del tren óptico con adaptador reductor 0,5x, asegurando resolución temporal sin aliasing y maximizando luminosidad y campo visual.
     \item \textbf{WP1.3: Software de control y estación in situ:} Automatización de secuencias de captura en Micro-Manager o Napari y Python para streaming directo y guardado sin pérdida de fotogramas en una computadora provista al hospital.
 \end{itemize}
 
@@ -82,41 +80,41 @@ Frente a estas barreras, el presente proyecto se postula en el área de \textbf{
 
 \subsubsection*{WP2: Flujo de Análisis de Bioimágenes para HSVM}
 
-\textbf{Problema que soluciona:} La inspección visual del batido ciliar es lenta, subjetiva y dependiente del operador. Las guías internacionales exigen analizar conjuntamente CBF y CBP, dado que algunas variantes conservan frecuencias normales con patrones imperceptibles al ojo humano no entrenado \cite{Shapiro2015,Bricmont2021,Wrona2025}.
+\textbf{Problema que soluciona:} La inspección visual del batido ciliar es lenta, subjetiva y no detecta alteraciones sutiles de patrón que conservan frecuencias normales \cite{Shapiro2015,Bricmont2021}.
 
 \textbf{Metodología y tareas:} Con la dedicación de 1 estudiante tesista de grado de FCEN-UBA operando sobre una estación de trabajo:
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
-    \item \textbf{WP2.1: Preprocesamiento y segmentación del epitelio ciliado activo:} Corrección de traslación tisular y segmentación automática basada en mapas de varianza temporal píxel a píxel, discriminando moco estático y detritos. No depende de WP1 ya que se incorporan bioimágenes archivadas del hospital que además servirán para garantizar robustez y generalidad ante ruidos, contrastes e iluminaciones heterogéneas.
+    \item \textbf{WP2.1: Preprocesamiento y segmentación del epitelio ciliado activo:} Corrección de traslación tisular y segmentación automática basada en mapas de varianza temporal píxel a píxel sobre bioimágenes archivadas (no depende de WP1) y nuevas, para garantizar robustez y generalidad ante ruidos, contrastes e iluminaciones heterogéneas.
     \item \textbf{WP2.2: Cuantificación de CBF mediante Transformada Rápida de Fourier:} Análisis espectral de potencia FFT sobre las series temporales de intensidad por píxel, generando mapas de calor de frecuencia dominante (rango fisiológico 10--15 Hz a 37 °C), CBF media y detección de áreas acinéticas (<4 Hz) \cite{Bricmont2021}.
-    \item \textbf{WP2.3: Cuantificación de CBP y descubrimiento de nuevos parámetros cinéticos:} Estimación de campos vectoriales mediante flujo óptico denso (algoritmo de Farnebäck) y kimogramas digitales ortogonales a la membrana para medir amplitud angular y asimetría temporal (fase efectiva vs. recuperación). Formulación por ciencia de datos de nuevos parámetros: matrices de sincronía interciliar, coherencia de fase espacial e índice de disquinesia ciliar (CDI) para clasificar movimientos normales, rígidos (\textit{DNAH11}), rotacionales (\textit{HYDIN, RSPH}) o inmovilidad completa (\textit{DNAH5, DNAI1}) \cite{Bricmont2021,Wrona2025}.
+    \item \textbf{WP2.3: Cuantificación de CBP y nuevos parámetros cinéticos:} Estimación de campos vectoriales por flujo óptico denso (algoritmo de Farnebäck) y kimogramas ortogonales para cuantificar amplitud angular y asimetría temporal. Formulación de métricas cuantitativas (sincronía interciliar, coherencia de fase e índice de disquinesia ciliar) para tipificar patrones normales, rígidos, rotacionales o acinéticos \cite{Bricmont2021,Wrona2025}.
 \end{itemize}
 
 \textbf{Entregables:} Flujo de análisis de bioimágenes en Python para cuantificar CBF/CBP con interfaz gráfica (GUI en PyQt/Napari) para asistencia diagnóstica médica.
 
 \subsubsection*{WP3: Procesamiento Cuantitativo de Bioimágenes de TEM}
 
-\textbf{Problema que soluciona:} El diagnóstico por TEM exige evaluar cientos de axonemas por muestra, procedimiento de bajo contraste que demanda un riguroso entrenamiento visual y presenta alta variabilidad interobservador. Además, el 20--30\% de los casos cursa con ultraestructura aparentemente normal o alteraciones sutiles que requieren cuantificación objetiva \cite{Shapiro2015,Bricmont2021,Wrona2025}.
+\textbf{Problema que soluciona:} El escrutinio manual de cientos de axonemas en micrografías TEM de bajo contraste introduce alta variabilidad interobservador y dificulta la detección de defectos ultraestructurales sutiles \cite{Bricmont2021,Wrona2025}.
 
 \textbf{Metodología y tareas:} Con apoyo del estudiante tesista de grado y el servicio integral de microscopía electrónica de la Facultad de Medicina de la UBA (fijación, inclusión, ultramicrotomía y horas de TEM):
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
     \item \textbf{WP3.1: Curaduría y adquisición de micrografías de TEM:} Curaduría, estandarización y calibración espacial de cortes transversales axonémicos archivados del Hospital Gutiérrez y repositorios públicos, junto con la adquisición de nuevas capturas ultraestructurales.
-    \item \textbf{WP3.2: Detección y segmentación axonémica:} Evaluación comparativa e implementación de modelos para segmentación de axonemas en micrografías TEM. Se contrastarán arquitecturas convolucionales preentrenadas (BioModel Zoo, Hugging Face) frente a la metodología híbrida \textit{convpaint} (\textit{embeddings} multiescala de redes convolucionales y \textit{Vision Transformers} acoplados a \textit{Random Forest}), cuyo esquema de \textit{few-shot learning} mitiga la escasez de anotaciones \cite{Shapiro2015,Wrona2025}.
-    \item \textbf{WP3.3: Clasificación ultraestructural axonémica:} Estudio comparativo entre métodos clásicos de bioimagen (perfilometría radial y promediado subaxonémico 2D para maximizar relación señal-ruido) y modelos de clasificación directa con aprendizaje profundo para tipificar anomalías y cuantificar la ausencia de brazos de dineína (ODA/IDA).
+    \item \textbf{WP3.2: Detección y segmentación axonémica:} Evaluación comparativa e implementación de modelos convolucionales y el método híbrido \textit{convpaint} (\textit{embeddings} de redes convolucionales y \textit{Vision Transformers} acoplados a \textit{Random Forest}), cuyo esquema de \textit{few-shot learning} mitiga la escasez de anotaciones \cite{Shapiro2015,Wrona2025}.
+    \item \textbf{WP3.3: Clasificación ultraestructural axonémica:} Estudio comparativo entre métodos clásicos de bioimagen (perfilometría radial y promediado subaxonémico 2D) y modelos de clasificación con aprendizaje profundo para tipificar anomalías y cuantificar la ausencia de brazos de dineína (ODA/IDA).
 \end{itemize}
 
 \textbf{Entregables:} Algoritmo de segmentación de axonemas y módulo de reporte cuantitativo automatizado de integridad ultraestructural en TEM.
 
 \subsubsection*{WP4: Bioinformática, Secuenciación y Caracterización de Variantes}
 
-\textbf{Problema que soluciona:} Los paneles de secuenciación masiva (NGS) comercial son inaccesibles en la rutina asistencial pública, limitando la confirmación molecular de casos complejos. Se requiere un flujo computacional reproducible articulado con la secuenciación dirigida de pacientes clave para la priorización e interpretación clínica de variantes en más de 60 genes de DCP \cite{Collison2025,Wrona2025}.
+\textbf{Problema que soluciona:} El elevado costo de los paneles NGS comerciales limita la confirmación molecular en la salud pública, requiriendo herramientas bioinformáticas abiertas para priorización clínica \cite{Collison2025}.
 
-\textbf{Metodología y tareas:} Flujo computacional desarrollado junto a pasantes de la Licenciatura en Ciencia de Datos de la FCEN-UBA, articulado con la secuenciación genética dirigida de casos pediátricos seleccionados del Hospital Gutiérrez:
+\textbf{Metodología y tareas:} Flujo computacional desarrollado en colaboración y con pasantes de la Licenciatura en Ciencia de Datos de la FCEN-UBA, articulado con la secuenciación genética dirigida de casos pediátricos seleccionados del Hospital Gutiérrez:
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
     \item \textbf{WP4.1: Minería genómica en datos abiertos y secuenciación de casos:} Curaduría de variantes patogénicas y VUS en >60 genes de DCP en repositorios públicos (ClinVar, gnomAD v4, LatinGen, ABraOM), complementada con la secuenciación focalizada (paneles NGS/WES) de pacientes pediátricos seleccionados del Hospital Gutiérrez con alta sospecha clínica y fenotipo no concluyente, caracterizando variantes causales regionales \cite{Collison2025}.
-    \item \textbf{WP4.2: Flujo de anotación funcional y predicción con IA:} Flujo en Python/Bash con Ensembl VEP y SnpEff integrando meta-predictores basados en IA (AlphaMissense, REVEL, CADD) para clasificar daño en genes de ODA (\textit{DNAH5, DNAI1}), TEM normal (\textit{DNAH11}) y fenotipos severos (\textit{CCDC39, CCDC40}) \cite{Paff2021,Wrona2025}. Modelado macromolecular 3D del impacto de variantes que generan codones de terminación prematura (PTC, presentes en hasta 28\% de pacientes) mediante AlphaFold DB y Foldseek.
+    \item \textbf{WP4.2: Flujo de anotación funcional y predicción con IA:} Flujo en Python/Bash con Ensembl VEP integrando meta-predictores basados en IA (AlphaMissense, REVEL, CADD) y modelado macromolecular 3D (AlphaFold DB, Foldseek) para clasificar daño en genes clave y evaluar impacto estructural de variantes \cite{Paff2021,Wrona2025}.
     \item \textbf{WP4.3: Generación de reportes clínicos moleculares e integración fenotípica:} Módulo computacional liviano de código abierto que procesa archivos VCF (de repositorios o de pacientes secuenciados) y genera reportes clínicos estructurados bajo criterios ACMG/AMP, articulando la evidencia genómica con los parámetros funcionales de HSVM (WP2) y ultraestructurales de TEM (WP3).
 \end{itemize}
 
@@ -124,21 +122,21 @@ Frente a estas barreras, el presente proyecto se postula en el área de \textbf{
 
 \subsubsection*{WP5: Capacitación Médica, Transferencia y Ciencia Abierta}
 
-\textbf{Problema que soluciona:} Brecha entre el desarrollo algorítmico académico y la práctica médica asistencial, y falta de reproducibilidad por protocolos heterogéneos y licencias comerciales privativas.
+\textbf{Problema que soluciona:} Brecha entre desarrollos algorítmicos y práctica asistencial, y falta de reproducibilidad por uso de software comercial privativo.
 
 \textbf{Metodología y tareas:}
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
-    \item \textbf{WP5.1: Talleres de capacitación:} Jornadas de entrenamiento para médicos del Hospital Gutiérrez en el manejo de la cámara de incubación ambiental y adquisición a alta velocidad (>200 fps) e interpretación de reportes cuantitativos de CBF, CBP y TEM \cite{Robson2025,Shapiro2015,Bricmont2021}.
-    \item \textbf{WP5.2: Elaboración de protocolos operativos estándar (SOP):} Redacción y transferencia de manuales ilustrados de buenas prácticas para la utilización de los elementos de la plataforma, incluido el software de análisis de impágenes y generación de reportes.
-    \item \textbf{WP5.3: Liberación en código abierto y difusión científica:} Publicación de la suite computacional completa enbajo licencia libre con entornos reproducibles (Docker/Pixi), redacción y envío de 2 manuscritos científicos a revistas internacionales de acceso abierto (Q1/Q2) y elaboración de la memoria final para la Fundación BBVA.
+    \item \textbf{WP5.1: Talleres de capacitación:} Jornadas de entrenamiento para médicos del Hospital Gutiérrez en el manejo de la cámara de incubación ambiental, adquisición a alta velocidad (>200 fps) e interpretación de reportes cuantitativos de CBF, CBP y TEM \cite{Robson2025,Shapiro2015,Bricmont2021}.
+    \item \textbf{WP5.2: Elaboración de protocolos operativos estándar (SOP):} Redacción y transferencia de manuales ilustrados de buenas prácticas para la utilización de la plataforma, el software de análisis de imágenes y la generación de reportes.
+    \item \textbf{WP5.3: Liberación en código abierto y difusión científica:} Publicación de la suite computacional completa bajo licencia libre con entornos reproducibles (Docker/Pixi), redacción y envío de 2 manuscritos científicos a revistas internacionales de acceso abierto (Q1/Q2) y elaboración de la memoria final para la Fundación BBVA.
 \end{itemize}
 
 \textbf{Entregables:} Personal clínico del Hospital Gutiérrez formalmente capacitado, manuales de procedimiento y SOPs transferidos, suite de software libre en GitHub, 2 manuscritos científicos enviados e informe final de la Beca Leonardo.
 
 \medskip\hrule\medskip
 
-\subsection*{4. Cronograma (códigos trazables WPx.y)}
+\subsection*{4. Calendario de Ejecución}
 
 {\small
 \begin{center}
@@ -155,44 +153,34 @@ Frente a estas barreras, el presente proyecto se postula en el área de \textbf{
 ]{1}{18}
 \gantttitle{Cronograma de ejecución (18 meses)}{18} \\
 \gantttitlelist{1,...,18}{1} \\
-\ganttgroup[group/.append style={fill=wpone, draw=wpone!70!black}]{WP1}{1}{6} \\
-\ganttbar[bar/.append style={fill=wpone!65, draw=wpone!70!black}]{WP1.1}{1}{4} \\
-\ganttbar[bar/.append style={fill=wpone!65, draw=wpone!70!black}]{WP1.2}{2}{5} \\
-\ganttbar[bar/.append style={fill=wpone!65, draw=wpone!70!black}]{WP1.3}{4}{6} \\
-\ganttgroup[group/.append style={fill=wptwo, draw=wptwo!70!black}]{WP2}{4}{12} \\
-\ganttbar[bar/.append style={fill=wptwo!65, draw=wptwo!70!black}]{WP2.1}{4}{7} \\
-\ganttbar[bar/.append style={fill=wptwo!65, draw=wptwo!70!black}]{WP2.2}{6}{10} \\
-\ganttbar[bar/.append style={fill=wptwo!65, draw=wptwo!70!black}]{WP2.3}{8}{12} \\
-\ganttgroup[group/.append style={fill=wpthree, draw=wpthree!70!black}]{WP3}{6}{14} \\
-\ganttbar[bar/.append style={fill=wpthree!65, draw=wpthree!70!black}]{WP3.1}{6}{8} \\
-\ganttbar[bar/.append style={fill=wpthree!65, draw=wpthree!70!black}]{WP3.2}{8}{11} \\
-\ganttbar[bar/.append style={fill=wpthree!65, draw=wpthree!70!black}]{WP3.3}{11}{14} \\
-\ganttgroup[group/.append style={fill=wpfour, draw=wpfour!70!black}]{WP4}{8}{16} \\
-\ganttbar[bar/.append style={fill=wpfour!75, draw=wpfour!70!black}]{WP4.1}{8}{11} \\
-\ganttbar[bar/.append style={fill=wpfour!75, draw=wpfour!70!black}]{WP4.2}{10}{14} \\
-\ganttbar[bar/.append style={fill=wpfour!75, draw=wpfour!70!black}]{WP4.3}{12}{16} \\
-\ganttgroup[group/.append style={fill=wpfive, draw=wpfive!70!black}]{WP5}{12}{18} \\
-\ganttbar[bar/.append style={fill=wpfive!65, draw=wpfive!70!black}]{WP5.1}{12}{14} \\
-\ganttbar[bar/.append style={fill=wpfive!65, draw=wpfive!70!black}]{WP5.2}{14}{16} \\
-\ganttbar[bar/.append style={fill=wpfive!65, draw=wpfive!70!black}]{WP5.3}{16}{18}
+%WP1
+\ganttgroup[group/.append style={fill=wpone, draw=wpone!70!black}]{WP1: Modernización Instrumental in-situ y Control Ambiental}{1}{6} \\
+\ganttbar[bar/.append style={fill=wpone!65, draw=wpone!70!black}]{WP1.1: Cámara de incubación ambiental}{1}{4} \\
+\ganttbar[bar/.append style={fill=wpone!65, draw=wpone!70!black}]{WP1.2: Cámara de alta velocidad}{3}{4} \\
+\ganttbar[bar/.append style={fill=wpone!65, draw=wpone!70!black}]{WP1.3: Software de control y estación in situ}{4}{6} \\
+%WP2
+\ganttgroup[group/.append style={fill=wptwo, draw=wptwo!70!black}]{WP2: Flujo de Análisis de Bioimágenes para HSVM}{2}{7} \\
+\ganttbar[bar/.append style={fill=wptwo!65, draw=wptwo!70!black}]{WP2.1: Preprocesamiento y segmentación del epitelio ciliado activo}{2}{4} \\
+\ganttbar[bar/.append style={fill=wptwo!65, draw=wptwo!70!black}]{WP2.2: Cuantificación de CBF mediante Transformada Rápida de Fourier}{3}{6} \\
+\ganttbar[bar/.append style={fill=wptwo!65, draw=wptwo!70!black}]{WP2.3: Cuantificación de CBP y nuevos parámetros cinéticos}{4}{7} \\
+%WP3
+\ganttgroup[group/.append style={fill=wpthree, draw=wpthree!70!black}]{WP3: Procesamiento Cuantitativo de Bioimágenes de TEM}{5}{11} \\
+\ganttbar[bar/.append style={fill=wpthree!65, draw=wpthree!70!black}]{WP3.1: Curaduría y adquisición de micrografías de TEM}{5}{8} \\
+\ganttbar[bar/.append style={fill=wpthree!65, draw=wpthree!70!black}]{WP3.2: Detección y segmentación axonémica}{7}{9} \\
+\ganttbar[bar/.append style={fill=wpthree!65, draw=wpthree!70!black}]{WP3.3: Clasificación ultraestructural axonémica}{9}{11} \\
+%WP4
+\ganttgroup[group/.append style={fill=wpfour, draw=wpfour!70!black}]{WP4: Bioinformática, Secuenciación y Caracterización de Variantes}{3}{8} \\
+\ganttbar[bar/.append style={fill=wpfour!75, draw=wpfour!70!black}]{WP4.1: Minería genómica en datos abiertos y secuenciación de casos}{3}{6} \\
+\ganttbar[bar/.append style={fill=wpfour!75, draw=wpfour!70!black}]{WP4.2: Flujo de anotación funcional y predicción con IA}{3}{7} \\
+\ganttbar[bar/.append style={fill=wpfour!75, draw=wpfour!70!black}]{WP4.3: Generación de reportes clínicos moleculares e integración fenotípica}{5}{8} \\
+%WP5
+\ganttgroup[group/.append style={fill=wpfive, draw=wpfive!70!black}]{WP5: Capacitación Médica, Transferencia y Ciencia Abierta}{9}{14} \\
+\ganttbar[bar/.append style={fill=wpfive!65, draw=wpfive!70!black}]{WP5.1: Talleres de capacitación}{9}{11} \\
+\ganttbar[bar/.append style={fill=wpfive!65, draw=wpfive!70!black}]{WP5.2: Elaboración de protocolos operativos estándar (SOP)}{10}{12} \\
+\ganttbar[bar/.append style={fill=wpfive!65, draw=wpfive!70!black}]{WP5.3: Liberación en código abierto y difusión científica}{11}{14}
 \end{ganttchart}
 \end{center}
 }
-
-\begin{center}
-\small
-\begin{tabular}{>{\raggedright\arraybackslash}p{0.13\textwidth} >{\raggedright\arraybackslash}p{0.82\textwidth}}
-\toprule
-\textbf{Código} & \textbf{Descripción resumida} \\
-\midrule
-WP1.1--WP1.3 & Cámara ambiental, integración de cámara rápida y flujo de adquisición abierto. \\
-WP2.1--WP2.3 & Segmentación HSVM, CBF por FFT y CBP por flujo óptico/kymographs. \\
-WP3.1--WP3.3 & Curaduría TEM, segmentación axonémica y cuantificación ODA/IDA. \\
-WP4.1--WP4.3 & Curaduría genómica, priorización de variantes e integración fenotípica. \\
-WP5.1--WP5.3 & Capacitación clínica, SOPs y liberación de software/informe final. \\
-\bottomrule
-\end{tabular}
-\end{center}
 
 \subsection*{5. Factibilidad, riesgos y mitigación}
 
