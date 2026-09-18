@@ -131,3 +131,13 @@ flowchart TD
 - [x] `CARTA_REFERENCIA_JUAN_BALINOTTI.md` - Carta de referencia oficial del Dr. Juan Balinotti (Hospital Gutiérrez / CONICET).
 - [x] `CARTA_REFERENCIA_HERNAN_GRECCO.md` - Carta de referencia oficial del Dr. Hernán Grecco (FCEN-UBA / CONICET).
 
+---
+
+## 7. Compilación LaTeX (instrucción operativa)
+
+Para compilar la memoria técnica en este proyecto, usar:
+
+```bash
+pixi run tectonic .\MEMORIA_TECNICA.tex
+```
+
