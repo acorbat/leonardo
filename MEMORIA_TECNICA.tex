@@ -47,22 +47,20 @@ Frente a la complejidad de las guías internacionales, el \textbf{Hospital Guti�
 
 \medskip\hrule\medskip
 
-\subsection*{2. Objetivos}
+\subsection*{2. Objetivos y Plan de Trabajo}
 
-La traslación a la salud pública enfrenta barreras críticas: la termolabilidad ciliar sin control ambiental (caída de CBF a $\le$32\,°C), la subjetividad del análisis visual manual y el costo prohibitivo del equipamiento. Para superar estas limitaciones, este proyecto propone una plataforma computacional abierta en el área de \textbf{Ciencias de la Computación, Ciencia de Datos e Inteligencia Artificial}, articulando \textbf{estandarización instrumental in situ, visión artificial para HSVM y TEM, y análisis bioinformático \textit{in-silico}} con los siguientes objetivos:
+La traslación a la salud pública enfrenta barreras críticas: la falta de control ambiental afecta la dinámica ciliar, la subjetividad del análisis visual manual y el costo prohibitivo del equipamiento. Para superar estas limitaciones, este proyecto propone desarrollar una plataforma computacional abierta en el área de \textbf{Ciencias de la Computación, Ciencia de Datos e Inteligencia Artificial}, articulando \textbf{estandarización instrumental in situ, visión artificial para HSVM y TEM, y análisis bioinformático} a través de los siguientes objetivos:
 
 \textbf{Objetivo general:} Desarrollar e implementar una plataforma de bioimagen, visión artificial y genómica para el soporte diagnóstico de DCP, con transferencia tecnológica al Hospital de Niños Dr. Ricardo Gutiérrez.
 
 \textbf{Objetivos específicos:}
 \begin{enumerate}[noitemsep]
-    \item Estandarizar la adquisición de imágenes incorporando control ambiental (temperatura y humedad) y una cámara de alta velocidad (WP1).
+    \item Estandarizar la toma de imágenes incorporando control ambiental y una cámara de alta velocidad (WP1).
     \item Desarrollar flujo de análisis de imágenes de HSVM enfocado en la cuantificación de CBF/CBP y la generación de reportes asistidos (WP2).
     \item Automatizar la detección y cuantificación ultraestructural de axonemas en micrografías de TEM (WP3).
     \item Implementar un flujo bioinformático \textit{in-silico} para la priorización de variantes y  la emisión de reportes moleculares (WP4).
     \item Capacitar a los equipos clínicos y liberar las herramientas en acceso abierto (WP5).
 \end{enumerate}
-
-\subsection*{3. Plan de Trabajo}
 
 \subsubsection*{WP1: Modernización Instrumental in-situ y Control Ambiental}
 
@@ -73,7 +71,7 @@ La traslación a la salud pública enfrenta barreras críticas: la termolabilida
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
     \item \textbf{WP1.1: Cámara de incubación ambiental:} Diseño, construcción y calibración de una cámara hermética termostatizada para la platina mediante impresión 3D, con reservorio de humedad saturada (>90\%) y lazo PID comandado por microcontrolador (Arduino/ESP32) acoplado a sensores digitales, garantizando \textbf{37 °C $\pm$ 0,3 °C}, a cargo de 2 estudiantes avanzados de Física de la FCEN-UBA.
     \item \textbf{WP1.2: Cámara de alta velocidad:} Integración de cámara científica de alta velocidad (>200 fps en ROI de 512$\times$512 px) y optimización del tren óptico con adaptador reductor 0,5x, asegurando resolución temporal sin aliasing y maximizando luminosidad y campo visual.
-    \item \textbf{WP1.3: Software de control y estación in situ:} Automatización de secuencias de captura en Micro-Manager o Napari y Python para streaming directo y guardado sin pérdida de fotogramas en una computadora provista al hospital.
+    \item \textbf{WP1.3: Software de control y estación in situ:} Automatización de adquisición de videos en Micro-Manager o Napari y Python en el hospital.
 \end{itemize}
 
 \textbf{Entregables:} Cámara ambiental termostatizada; estación de videomicroscopía adaptada con cámara de alta velocidad y entorno abierto de adquisición instalado en el hospital.
@@ -85,7 +83,7 @@ La traslación a la salud pública enfrenta barreras críticas: la termolabilida
 \textbf{Metodología y tareas:} Con la dedicación de 1 estudiante tesista de grado de FCEN-UBA operando sobre una estación de trabajo:
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
-    \item \textbf{WP2.1: Preprocesamiento y segmentación del epitelio ciliado activo:} Corrección de traslación tisular y segmentación automática basada en mapas de varianza temporal píxel a píxel sobre bioimágenes archivadas (no depende de WP1) y nuevas, para garantizar robustez y generalidad ante ruidos, contrastes e iluminaciones heterogéneas.
+    \item \textbf{WP2.1: Preprocesamiento y segmentación del epitelio ciliado activo:} Segmentación automática basada en mapas de varianza temporal píxel a píxel sobre bioimágenes archivadas (no depende de WP1) y nuevas, para garantizar robustez y generalidad ante ruidos, contrastes e iluminaciones heterogéneas.
     \item \textbf{WP2.2: Cuantificación de CBF mediante Transformada Rápida de Fourier:} Análisis espectral de potencia FFT sobre las series temporales de intensidad por píxel, generando mapas de calor de frecuencia dominante (rango fisiológico 10--15 Hz a 37 °C), CBF media y detección de áreas acinéticas (<4 Hz) \cite{Bricmont2021}.
     \item \textbf{WP2.3: Cuantificación de CBP y nuevos parámetros cinéticos:} Estimación de campos vectoriales por flujo óptico denso (algoritmo de Farnebäck) y kimogramas ortogonales para cuantificar amplitud angular y asimetría temporal. Formulación de métricas cuantitativas (sincronía interciliar, coherencia de fase e índice de disquinesia ciliar) para tipificar patrones normales, rígidos, rotacionales o acinéticos \cite{Bricmont2021,Wrona2025}.
 \end{itemize}
@@ -94,7 +92,7 @@ La traslación a la salud pública enfrenta barreras críticas: la termolabilida
 
 \subsubsection*{WP3: Procesamiento Cuantitativo de Bioimágenes de TEM}
 
-\textbf{Problema que soluciona:} El escrutinio manual de cientos de axonemas en micrografías TEM de bajo contraste introduce alta variabilidad interobservador y dificulta la detección de defectos ultraestructurales sutiles \cite{Bricmont2021,Wrona2025}.
+\textbf{Problema que soluciona:} El escrutinio manual de cientos de axonemas en micrografías TEM introduce alta variabilidad interobservador y dificulta la detección de defectos ultraestructurales sutiles \cite{Bricmont2021,Wrona2025}.
 
 \textbf{Metodología y tareas:} Con apoyo del estudiante tesista de grado y el servicio integral de microscopía electrónica de la Facultad de Medicina de la UBA (fijación, inclusión, ultramicrotomía y horas de TEM):
 
@@ -113,30 +111,30 @@ La traslación a la salud pública enfrenta barreras críticas: la termolabilida
 \textbf{Metodología y tareas:} Flujo computacional desarrollado en colaboración y con pasantes de la Licenciatura en Ciencia de Datos de la FCEN-UBA, articulado con la secuenciación genética dirigida de casos pediátricos seleccionados del Hospital Gutiérrez:
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
-    \item \textbf{WP4.1: Minería genómica en datos abiertos y secuenciación de casos:} Curaduría de variantes patogénicas y VUS en >60 genes de DCP en repositorios públicos (ClinVar, gnomAD v4, LatinGen, ABraOM), complementada con la secuenciación focalizada (paneles NGS/WES) de pacientes pediátricos seleccionados del Hospital Gutiérrez con alta sospecha clínica y fenotipo no concluyente, caracterizando variantes causales regionales \cite{Collison2025}.
-    \item \textbf{WP4.2: Flujo de anotación funcional y predicción con IA:} Flujo en Python/Bash con Ensembl VEP integrando meta-predictores basados en IA (AlphaMissense, REVEL, CADD) y modelado macromolecular 3D (AlphaFold DB, Foldseek) para clasificar daño en genes clave y evaluar impacto estructural de variantes \cite{Paff2021,Wrona2025}.
+    \item \textbf{WP4.1: Minería genómica en datos abiertos y secuenciación de casos:} Curaduría de variantes patogénicas y VUS en >60 genes de DCP en repositorios públicos (ClinVar, gnomAD v4, LatinGen, ABraOM), complementada con la secuenciación focalizada (paneles NGS/WES) de pacientes pediátricos seleccionados del Hospital Gutiérrez, caracterizando variantes causales regionales \cite{Collison2025}.
+    \item \textbf{WP4.2: Flujo de anotación funcional y predicción con IA:} Flujo en Python/Bash con Ensembl VEP integrando meta-predictores basados en IA (AlphaMissense, REVEL, CADD) y modelado macromolecular 3D (AlphaFold, Foldseek) para clasificar daño en genes clave y evaluar impacto estructural de variantes \cite{Paff2021,Wrona2025}.
     \item \textbf{WP4.3: Generación de reportes clínicos moleculares e integración fenotípica:} Módulo computacional liviano de código abierto que procesa archivos VCF (de repositorios o de pacientes secuenciados) y genera reportes clínicos estructurados bajo criterios ACMG/AMP, articulando la evidencia genómica con los parámetros funcionales de HSVM (WP2) y ultraestructurales de TEM (WP3).
 \end{itemize}
 
-\textbf{Entregables:} Flujo bioinformático de libre acceso, catálogo anotado de variantes en >60 genes de DCP, caracterización molecular de casos pediátricos seleccionados y generador automatizado de reportes clínicos moleculares.
+\textbf{Entregables:} Flujo bioinformático de libre acceso, catálogo anotado de variantes en >60 genes de DCP, caracterización molecular de casos pediátricos seleccionados y generador automatizado de reportes clínicos.
 
 \subsubsection*{WP5: Capacitación Médica, Transferencia y Ciencia Abierta}
 
-\textbf{Problema que soluciona:} Brecha entre desarrollos algorítmicos y práctica asistencial, y falta de reproducibilidad por uso de software comercial privativo.
+\textbf{Problema que soluciona:} Brecha entre desarrollos algorítmicos y práctica asistencial.
 
 \textbf{Metodología y tareas:}
 
 \begin{itemize}[leftmargin=*,noitemsep,topsep=1pt]
-    \item \textbf{WP5.1: Talleres de capacitación:} Jornadas de entrenamiento para médicos del Hospital Gutiérrez en el manejo de la cámara de incubación ambiental, adquisición a alta velocidad (>200 fps) e interpretación de reportes cuantitativos de CBF, CBP y TEM \cite{Robson2025,Shapiro2015,Bricmont2021}.
+    \item \textbf{WP5.1: Talleres de capacitación:} Jornadas de entrenamiento para médicos del Hospital Gutiérrez en el manejo de la cámara de incubación ambiental, adquisición a alta velocidad e interpretación de reportes cuantitativos de CBF, CBP y TEM \cite{Robson2025,Shapiro2015,Bricmont2021}.
     \item \textbf{WP5.2: Elaboración de protocolos operativos estándar (SOP):} Redacción y transferencia de manuales ilustrados de buenas prácticas para la utilización de la plataforma, el software de análisis de imágenes y la generación de reportes.
-    \item \textbf{WP5.3: Liberación en código abierto y difusión científica:} Publicación de la suite computacional completa bajo licencia libre con entornos reproducibles (Docker/Pixi), redacción y envío de 2 manuscritos científicos a revistas internacionales de acceso abierto (Q1/Q2) y elaboración de la memoria final para la Fundación BBVA.
+    \item \textbf{WP5.3: Liberación en código abierto y difusión científica:} Publicación de la suite computacional completa bajo licencia libre con entornos reproducibles (Docker/Pixi), redacción y envío de 2 manuscritos científicos a revistas internacionales de acceso abierto y elaboración de la memoria final para la Fundación BBVA.
 \end{itemize}
 
 \textbf{Entregables:} Personal clínico del Hospital Gutiérrez formalmente capacitado, manuales de procedimiento y SOPs transferidos, suite de software libre en GitHub, 2 manuscritos científicos enviados e informe final de la Beca Leonardo.
 
 \medskip\hrule\medskip
 
-\subsection*{4. Calendario de Ejecución}
+\subsection*{3. Calendario de Ejecución}
 
 {\small
 \begin{center}
@@ -182,7 +180,7 @@ La traslación a la salud pública enfrenta barreras críticas: la termolabilida
 \end{center}
 }
 
-\subsection*{5. Factibilidad, riesgos y mitigación}
+\subsection*{4. Factibilidad, riesgos y mitigación}
 
 \textbf{Factibilidad:} el proyecto usa infraestructura existente de FCEN-UBA (cómputo, taller, formación de recursos humanos) y colaboración clínica ya activa con Hospital Gutiérrez, reduciendo riesgo de implementación.
 
@@ -193,7 +191,7 @@ La traslación a la salud pública enfrenta barreras críticas: la termolabilida
 \item \textit{Variantes de significado incierto:} consenso ACMG/AMP con integración de evidencia funcional, estructural y clínica.
 \end{itemize}
 
-\subsection*{6. Impacto esperado y transferencia}
+\subsection*{5. Impacto esperado y transferencia}
 
 \begin{enumerate}[leftmargin=*]
 \item Plataforma computacional transferida a hospital pediátrico público con trazabilidad diagnóstica.
@@ -202,7 +200,7 @@ La traslación a la salud pública enfrenta barreras críticas: la termolabilida
 \item Disponibilización regional en acceso abierto de software, SOPs y pipeline genómico \cite{Paff2021,Robson2025}.
 \end{enumerate}
 
-\subsection*{7. Referencias bibliográficas}
+\subsection*{6. Referencias bibliográficas}
 
 \begin{thebibliography}{9}
 \bibitem{Robson2025} Robson EA \textit{et al}. \textit{ERJ Open Research}. 2025. DOI: \href{https://doi.org/10.1183/23120541.00466-2025}{10.1183/23120541.00466-2025}.
