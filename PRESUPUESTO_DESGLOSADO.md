@@ -21,7 +21,7 @@
 | **3** | **Patrones de Calibración, Reactivos e Insumos** *(Aportados por FCEN y Hospital)* | $0,00 | 0,0% |
 | **4** | **Recursos Humanos, Estipendios y Servicio de Microscopía TEM** | $15.100,00 | 30,2% |
 | **5** | **Difusión Científica, Publicaciones Open Access y Congresos** | $9.000,00 | 18,0% |
-| **6** | **Costos de Administración Institucional, Impuestos y Variaciones de Costos** | $10.900,00 | 21,8% |
+| **6** | **Administración Institucional (Overhead 10%), Costos Financieros y Previsión** | $10.900,00 | 21,8% |
 | | **TOTAL BRUTO GENERAL SOLICITADO:** | **$50.000,00** | **100,0%** |
 
 ---
@@ -103,12 +103,28 @@
 
 ---
 
-### Rubro 6: Costos de Administración Institucional, Impuestos y Variaciones de Costos ($10.900,00 USD)
-*Gestión institucional, requerimientos bancarios e impositivos y fondo de contingencia operativa frente a variaciones de costos.*
+### Rubro 6: Costos de Administración Institucional (Overhead 10%), Costos Financieros y Previsión ($10.900,00 USD)
+*Gestión institucional vía FUNDACEN o Hacienda, contribuciones reglamentarias universitarias, comisiones bancarias por divisas y fondo de previsión ante variaciones de costos.*
 
-1.  **Administración Universitaria, Impuestos y Fondo de Previsión ante Variaciones de Costos:**
-    *   *Descripción:* Fondo destinado a cubrir los aranceles de administración institucional del convenio a través de la sede (FCEN-UBA / fundación universitaria gestora), comisiones bancarias por recepción y transferencia internacional de divisas (tres desembolsos preceptivos de BBVA: 50%, 40% y 10%), gravámenes impositivos locales y una sólida previsión de contingencia frente a eventuales fluctuaciones cambiarias, arancelarias y variaciones en las estimaciones de costos durante los 18 meses de ejecución del proyecto, asegurando la plena sustentabilidad y blindaje financiero de la propuesta.
-    *   *Monto:* **$10.900,00 USD**
+Dado que la percepción y administración de los fondos de la Beca Leonardo de la Fundación BBVA se tramita de forma institucional a través de la sede universitaria, se incluye un **overhead institucional del 10,0% ($5.000,00 USD)** (dentro del rango normativo de 7,5% a 10%), distribuido según la reglamentación aplicable entre la entidad administradora/gestora, la facultad y el departamento o instituto ejecutor. El remanente presupuestario de este rubro ($5.900,00 USD) cubre las comisiones bancarias por transferencias internacionales de divisas en los tres desembolsos de la Fundación BBVA, gravámenes locales y un fondo de contingencia operativa frente a variaciones de costos.
+
+1.  **Overhead Institucional - Entidad Administradora / Gestora (FUNDACEN o Hacienda FCEN-UBA, 5,0%):**
+    *   *Descripción:* Retención reglamentaria institucional para la administración contable y financiera, compras y contrataciones, liquidación de estipendios a estudiantes, rendiciones de cuentas periódicas y gestión integral de los fondos del convenio a través de la Fundación de la Facultad de Ciencias Exactas y Naturales (FUNDACEN) o la Dirección General de Hacienda de la FCEN-UBA.
+    *   *Monto:* **$2.500,00 USD** (5,0% de la ayuda total de USD 50.000)
+2.  **Overhead Institucional - Facultad de Ciencias Exactas y Naturales (FCEN-UBA, 2,5%):**
+    *   *Descripción:* Aporte institucional a la sede central universitaria por el uso y soporte de la infraestructura edilicia, laboratorios, servicios generales, seguridad y conectividad de alta velocidad que sustentan el proyecto.
+    *   *Monto:* **$1.250,00 USD** (2,5% de la ayuda total de USD 50.000)
+3.  **Overhead Institucional - Unidad Académica Ejecutora (Departamento de Física / Instituto, 2,5%):**
+    *   *Descripción:* Contribución asignada al Departamento de Física (y/o instituto de investigación FCEN-UBA/CONICET sede de trabajo del investigador postulante y los estudiantes becarios), destinada al sostenimiento operativo de talleres mecánicos y electrónicos, laboratorios de docencia/investigación y facilidades computacionales de base.
+    *   *Monto:* **$1.250,00 USD** (2,5% de la ayuda total de USD 50.000)
+4.  **Comisiones Bancarias por Transferencias Internacionales de Divisas e Impuestos:**
+    *   *Descripción:* Cobertura de gastos bancarios de corresponsalía internacional, transferencias de divisas y comisiones de recepción en los tres desembolsos preceptivos de la Fundación BBVA (50% anticipo inicial, 40% desembolso intermedio y 10% liquidación final), así como retenciones o gravámenes fiscales locales aplicables.
+    *   *Monto:* **$2.500,00 USD**
+5.  **Fondo de Previsión ante Variaciones de Costos y Contingencias Operativas:**
+    *   *Descripción:* Fondo de reserva técnica para absorber eventuales fluctuaciones cambiarias, variaciones en las cotizaciones de plaza de insumos y servicios técnicos durante los 14 a 18 meses de ejecución del plan de trabajo, garantizando el blindaje financiero del proyecto sin comprometer ninguna actividad sustantiva.
+    *   *Monto:* **$3.400,00 USD**
+
+*Subtotal Rubro 6:* **$10.900,00 USD** (21,8%)
 
 ---
 
@@ -123,6 +139,65 @@
     4.  Financiar el estipendio anual de **tres estudiantes universitarios** en FCEN-UBA (dos de grado de Física para hardware ambiental y uno de finalización de carrera para bioimágenes a $350 USD/mes cada uno, totalizando $12.600 USD), complementado con la articulación formativa de pasantes de ciencia de datos.
     5.  Financiar de manera integral el procesamiento ultraestructural de muestras y las horas de TEM mediante el servicio institucional ($2.500 USD).
     6.  Garantizar publicaciones en revistas de primer cuartil (Q1) en acceso abierto y difusión en congresos científicos ($9.000 USD).
-    7.  Blindar el proyecto contra contingencias cambiarias, impuestos locales, aranceles universitarios y variaciones en las estimaciones de costos ($10.900 USD).
+    7.  Cubrir rigurosamente el overhead institucional normativo del 10% ($5.000 USD: 5% FUNDACEN/Hacienda, 2,5% FCEN y 2,5% Departamento de Física/Instituto), las comisiones bancarias de transferencias internacionales e impuestos ($2.500 USD), y una reserva técnica de previsión ante variaciones de costos y contingencias ($3.400 USD), totalizando $10.900 USD.
+
+---
+
+## 4. Planilla de Ejecución Presupuestaria Cronológica (Modelo Excel Convocatoria)
+
+La siguiente tabla replica la estructura del modelo en planilla de cálculo (Excel) requerido para la presentación del presupuesto ante la Fundación BBVA. Los meses de ejecución están estrictamente coordinados con los paquetes de trabajo (WPs) y las tareas del cronograma detallado en la **Memoria Técnica** (`MEMORIA_TECNICA.tex`):
+
+### 4.1 Tabla Principal de Erogaciones Presupuestarias Solicitadas (USD 50.000,00)
+
+| Rubro/actividad | Mes de ejecución | Monto en dólares |
+| :--- | :---: | :---: |
+| **Hardware e Instrumentación:** Componentes para diseño, calibración y fabricación de cámara ambiental termostatizada (37 °C ± 0,3 °C) y control de humedad relativa saturada (>90%) con sensores digitales, platina calefactora, microcontrolador Arduino/ESP32 y manufactura aditiva PETG (WP1.1) | Meses 1–2 | $1.000,00 |
+| **Hardware e Instrumentación:** Cámara científica monocromática de alta velocidad Axiocam 705 mono (>200 fps en ROI 512×512 px) provista por distribuidor oficial en plaza local (Bioingeniería) para videomicroscopía in situ (WP1.2) | Meses 3–4 | $9.000,00 |
+| **Equipamiento Informático:** Estación de trabajo (Workstation) de alto rendimiento con GPU dedicada (NVIDIA con Tensor Cores) para desarrollo algorítmico de visión artificial, deep learning (*convpaint*) y procesamiento de bioimágenes en FCEN-UBA (Soporte WP2 y WP3) | Meses 1–2 | $3.000,00 |
+| **Equipamiento Informático:** Computadora (desktop o laptop de alta potencia con 32–64 GB RAM y disco NVMe ultrarrápido) dedicada a la estación del microscopio en el Hospital Gutiérrez para adquisición sincrónica in situ y streaming a >200 fps sin pérdida de fotogramas (WP1.3) | Meses 4–5 | $2.000,00 |
+| **Recursos Humanos / Estipendios:** Estipendio de estímulo a la investigación para 2 estudiantes avanzados de grado de la Licenciatura en Ciencias Físicas (FCEN-UBA) dedicados al diseño, validación e implementación de la cámara ambiental y control térmico (WP1.1) (12 meses × $350,00 USD/mes cada uno) | Meses 1–12 | $8.400,00 |
+| **Recursos Humanos / Estipendios:** Estipendio de investigación para 1 estudiante de finalización de carrera / tesista de grado (FCEN-UBA) a cargo del análisis computacional de bioimágenes de videomicroscopía (CBF/CBP por FFT y flujo óptico) y microscopía electrónica TEM (*convpaint*) (WP2 y WP3) (12 meses × $350,00 USD/mes) | Meses 2–13 | $4.200,00 |
+| **Servicios Técnicos Especializados:** Servicio integral institucional de Microscopía Electrónica de Transmisión (TEM): preparación y procesamiento ultraestructural de muestras biológicas (fijación química, inclusión en resina epoxi, ultramicrotomía de 70–90 nm, tinción de contraste doble) y horas de uso de microscopio TEM institucional (WP3.1) | Meses 5–8 | $2.500,00 |
+| **Difusión Científica y Congresos:** Inscripciones, pasajes, traslados y viáticos para presentación de ponencias y resultados del proyecto en congresos científicos nacionales e internacionales de bioimagen, visión artificial y neumonología pediátrica (WP5.3) | Meses 10–14 | $3.000,00 |
+| **Difusión Científica y Publicaciones:** Cargos por procesamiento de artículos (APCs) para la publicación de 2 a 3 artículos científicos en revistas internacionales indexadas de primer cuartil (Q1) bajo modalidad de acceso abierto (*Open Access*) (WP5.3) | Meses 12–14 | $6.000,00 |
+| **Administración Institucional (Overhead 5,0%):** Entidad gestora del convenio (FUNDACEN o Dirección General de Hacienda FCEN-UBA) para administración financiera, rendición de cuentas, compras y contrataciones | Meses 1–14 | $2.500,00 |
+| **Administración Institucional (Overhead 2,5%):** Facultad de Ciencias Exactas y Naturales (FCEN-UBA), sede institucional del proyecto, por uso de infraestructura edilicia, conectividad y servicios generales | Meses 1–14 | $1.250,00 |
+| **Administración Institucional (Overhead 2,5%):** Departamento de Física / Instituto de adscripción (FCEN-UBA), unidad ejecutora, para soporte operativo de talleres, laboratorios y equipamiento | Meses 1–14 | $1.250,00 |
+| **Costos Financieros e Impuestos:** Comisiones bancarias por transferencias internacionales de divisas en los 3 desembolsos de BBVA (50%, 40% y 10%) y gravámenes locales aplicables | Meses 1–14 | $2.500,00 |
+| **Previsión y Contingencia:** Fondo de reserva técnica ante variaciones de costos de plaza, fluctuaciones cambiarias o arancelarias durante la ejecución | Meses 1–14 | $3.400,00 |
+| **TOTAL GENERAL SOLICITADO (USD)** | **Meses 1–14** | **$50.000,00** |
+
+*(Nota para carga unificada en Excel: si el formulario de la convocatoria requiere consolidar el Rubro 6 en un único renglón, corresponde consignar: "Administración Institucional (Overhead 10%: FUNDACEN/Hacienda 5%, FCEN 2,5%, Depto. 2,5%), Costos Financieros e Impuestos ($2.500) y Fondo de Previsión ($3.400)", por un monto de $10.900,00 USD con período de ejecución en Meses 1–14).*
+
+---
+
+### 4.2 Aportes Institucionales y Recursos Preexistentes a Costo Cero (Contrapartida)
+
+Para reflejar la integridad de la matriz de recursos del proyecto, a continuación se detallan las actividades e insumos esenciales provistos por la FCEN-UBA y el Hospital Gutiérrez sin erogación presupuestaria adicional para la Fundación BBVA:
+
+| Rubro/actividad | Mes de ejecución | Monto en dólares |
+| :--- | :---: | :---: |
+| **Hardware Óptico:** Adaptador C-mount de reducción de 0,5x preexistente y compatible en el microscopio del Hospital Gutiérrez (optimización de muestreo y luminosidad con objetivo 20x) | Mes 1 | $0,00 |
+| **Logística y Aduana:** Fletes internacionales y aranceles aduaneros (prescindibles por adquisición comercial en plaza local mediante distribuidor y manufactura aditiva in situ) | Meses 1–4 | $0,00 |
+| **Infraestructura de Cómputo:** Servidores de almacenamiento masivo y clústeres de cálculo centralizados de la FCEN-UBA para resguardo de bioimágenes y grandes repositorios genómicos | Meses 1–14 | $0,00 |
+| **Insumos y Reactivos:** Reactivos químicos, tampones, portaobjetos especiales y patrones ópticos micrométricos de calibración espacial aportados por laboratorios de FCEN-UBA y Hospital Gutiérrez | Meses 1–14 | $0,00 |
+| **Recursos Humanos / Genómica:** Pasantes de la carrera de Licenciatura en Ciencia de Datos (FCEN-UBA) para proyectos curriculares específicos de minería bioinformática y análisis genómico in-silico (WP4.1 y WP4.2) | Meses 3–8 | $0,00 |
+| **Servicios Técnicos Mecánicos:** Mecanizado de precisión y rectificado de platina térmica de aluminio realizado por el Taller Mecánico institucional de la FCEN-UBA | Meses 1–4 | $0,00 |
+| **Software y Herramientas Computacionales:** Suite completa de código abierto y entornos reproducibles sin costos de licencias comerciales (Python, Micro-Manager, Napari, Ensembl VEP, AlphaFold DB, Docker) | Meses 1–14 | $0,00 |
+| **TOTAL APORTES INSTITUCIONALES (USD)** | **Meses 1–14** | **$0,00** |
+
+---
+
+### 4.3 Alineación Temporal con el Cronograma de la Memoria Técnica (`MEMORIA_TECNICA.tex`)
+
+La temporalidad asignada a cada partida presupuestaria se deduce de manera unívoca del diagrama de Gantt y los paquetes de trabajo de la propuesta científica:
+1.  **Meses 1 a 2:** Se efectiviza la compra de componentes de hardware electrónico/mecánico ($1.000 USD) para el desarrollo inmediato de la cámara ambiental termostatizada (**WP1.1**, meses 1–4) y se instala la Workstation de desarrollo GPU ($3.000 USD) en FCEN-UBA para disponibilizar el entorno de cómputo previo al inicio del desarrollo algorítmico de **WP2** (mes 2). Comienza la ejecución de las becas de los estudiantes de física (**WP1.1**).
+2.  **Meses 3 a 4:** Coincidiendo con la ventana estipulada en el cronograma para la tarea **WP1.2** ("Cámara de alta velocidad", meses 3–4), se adquiere la cámara científica Axiocam 705 mono ($9.000 USD) a través del proveedor local, posibilitando su integración al tren óptico.
+3.  **Meses 4 a 5:** En coincidencia con **WP1.3** ("Software de control y estación in situ", meses 4–6), se incorpora la computadora del Hospital Gutiérrez ($2.000 USD) para dejar operativa la estación de adquisición sincronizada antes de la finalización de WP1.
+4.  **Meses 5 a 8:** Durante la ejecución de la tarea **WP3.1** ("Curaduría y adquisición de micrografías de TEM", meses 5–8), se contrata el Servicio Integral de Microscopía Electrónica de Transmisión ($2.500 USD) para el procesamiento químico y ultraestructural de las muestras y la obtención de micrografías de alta resolución.
+5.  **Meses 1 a 12 y 2 a 13:** Los estipendios de los 3 estudiantes universitarios ($12.600 USD en total) se abonan mensualmente a lo largo de 12 meses, garantizando la dedicación continua durante la construcción instrumental (WP1), el desarrollo de visión por computadora para HSVM (WP2, meses 2–7) y la segmentación con *convpaint* en TEM (WP3, meses 5–11).
+6.  **Meses 10 a 14:** Coincidiendo con el despliegue de **WP5** ("Capacitación Médica, Transferencia y Ciencia Abierta", meses 9–14) y específicamente la tarea **WP5.3** ("Liberación en código abierto y difusión científica", meses 11–14), se ejecutan las partidas destinadas a congresos científicos ($3.000 USD) y cargos por publicación Open Access APC ($6.000 USD).
+7.  **Meses 1 a 14 (Transversal):** La partida de administración institucional cubre el **overhead institucional regulatorio del 10,0% ($5.000 USD)** —discriminado en 5% ($2.500 USD) para FUNDACEN o Hacienda, 2,5% ($1.250 USD) para la FCEN y 2,5% ($1.250 USD) para el Departamento de Física / Instituto—, junto con las comisiones bancarias por transferencias internacionales de divisas en los 3 desembolsos de la Fundación BBVA ($2.500 USD) y un fondo de contingencia ($3.400 USD). Esta partida se devenga proporcionalmente a lo largo del proyecto, blindando financieramente la ejecución frente a contingencias macroeconómicas o cambiarias y acompañando los tres desembolsos estipulados por la Fundación BBVA (50% anticipo inicial, 40% hito intermedio y 10% tras la aprobación del informe final).
+
 
 
