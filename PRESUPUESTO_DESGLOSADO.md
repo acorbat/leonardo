@@ -103,24 +103,18 @@
 
 ---
 
-### Rubro 6: Costos de Administración Institucional (Overhead 10%), Costos Financieros y Previsión ($10.900,00 USD)
-*Gestión institucional vía FUNDACEN o Hacienda, contribuciones reglamentarias universitarias, comisiones bancarias por divisas y fondo de previsión ante variaciones de costos.*
+### Rubro 6: Costos de Administración Institucional (Overhead 5% a 10%), Costos Financieros y Previsión ($10.900,00 USD)
+*Gestión institucional vía FUNDACEN o Hacienda, contribuciones universitarias, comisiones bancarias por divisas y fondo de previsión ante variaciones de costos.*
 
-Dado que la percepción y administración de los fondos de la Beca Leonardo de la Fundación BBVA se tramita de forma institucional a través de la sede universitaria, se incluye un **overhead institucional del 10,0% ($5.000,00 USD)** (dentro del rango normativo de 7,5% a 10%), distribuido según la reglamentación aplicable entre la entidad administradora/gestora, la facultad y el departamento o instituto ejecutor. El remanente presupuestario de este rubro ($5.900,00 USD) cubre las comisiones bancarias por transferencias internacionales de divisas en los tres desembolsos de la Fundación BBVA, gravámenes locales y un fondo de contingencia operativa frente a variaciones de costos.
+Dado que la percepción y administración de los fondos de la Beca Leonardo de la Fundación BBVA se tramita de forma institucional a través de la sede universitaria, se incluye una partida de **overhead institucional (entre 5% y 10%, presupuestada al 10,0% por $5.000,00 USD)** dependiendo de la entidad gestora (FUNDACEN o Hacienda), facultad y departamento o instituto ejecutor. Este monto se utiliza de manera genérica e integral para administración financiera, rendición de cuentas, compras y contrataciones, infraestructura edilicia, conectividad y servicios generales, y soporte operativo de talleres, laboratorios y equipamiento. El remanente presupuestario de este rubro ($5.900,00 USD) cubre las comisiones bancarias por transferencias internacionales de divisas en los tres desembolsos de la Fundación BBVA, gravámenes locales y un fondo de contingencia operativa frente a variaciones de costos.
 
-1.  **Overhead Institucional - Entidad Administradora / Gestora (FUNDACEN o Hacienda FCEN-UBA, 5,0%):**
-    *   *Descripción:* Retención reglamentaria institucional para la administración contable y financiera, compras y contrataciones, liquidación de estipendios a estudiantes, rendiciones de cuentas periódicas y gestión integral de los fondos del convenio a través de la Fundación de la Facultad de Ciencias Exactas y Naturales (FUNDACEN) o la Dirección General de Hacienda de la FCEN-UBA.
-    *   *Monto:* **$2.500,00 USD** (5,0% de la ayuda total de USD 50.000)
-2.  **Overhead Institucional - Facultad de Ciencias Exactas y Naturales (FCEN-UBA, 2,5%):**
-    *   *Descripción:* Aporte institucional a la sede central universitaria por el uso y soporte de la infraestructura edilicia, laboratorios, servicios generales, seguridad y conectividad de alta velocidad que sustentan el proyecto.
-    *   *Monto:* **$1.250,00 USD** (2,5% de la ayuda total de USD 50.000)
-3.  **Overhead Institucional - Unidad Académica Ejecutora (Departamento de Física / Instituto, 2,5%):**
-    *   *Descripción:* Contribución asignada al Departamento de Física (y/o instituto de investigación FCEN-UBA/CONICET sede de trabajo del investigador postulante y los estudiantes becarios), destinada al sostenimiento operativo de talleres mecánicos y electrónicos, laboratorios de docencia/investigación y facilidades computacionales de base.
-    *   *Monto:* **$1.250,00 USD** (2,5% de la ayuda total de USD 50.000)
-4.  **Comisiones Bancarias por Transferencias Internacionales de Divisas e Impuestos:**
+1.  **Administración Institucional (Overhead 5% a 10%):**
+    *   *Descripción:* Arancel de gestión y contribución institucional (entre 5% y 10%, según el esquema aplicable entre la entidad gestora —FUNDACEN o Hacienda FCEN-UBA—, la facultad y el departamento o instituto). Se destina genéricamente a administración financiera, rendición de cuentas, compras y contrataciones, infraestructura edilicia, conectividad y servicios generales, y soporte operativo de talleres, laboratorios y equipamiento.
+    *   *Monto:* **$5.000,00 USD** (10,0% de la ayuda total de USD 50.000)
+2.  **Comisiones Bancarias por Transferencias Internacionales de Divisas e Impuestos:**
     *   *Descripción:* Cobertura de gastos bancarios de corresponsalía internacional, transferencias de divisas y comisiones de recepción en los tres desembolsos preceptivos de la Fundación BBVA (50% anticipo inicial, 40% desembolso intermedio y 10% liquidación final), así como retenciones o gravámenes fiscales locales aplicables.
     *   *Monto:* **$2.500,00 USD**
-5.  **Fondo de Previsión ante Variaciones de Costos y Contingencias Operativas:**
+3.  **Fondo de Previsión ante Variaciones de Costos y Contingencias Operativas:**
     *   *Descripción:* Fondo de reserva técnica para absorber eventuales fluctuaciones cambiarias, variaciones en las cotizaciones de plaza de insumos y servicios técnicos durante los 14 a 18 meses de ejecución del plan de trabajo, garantizando el blindaje financiero del proyecto sin comprometer ninguna actividad sustantiva.
     *   *Monto:* **$3.400,00 USD**
 
@@ -139,7 +133,7 @@ Dado que la percepción y administración de los fondos de la Beca Leonardo de l
     4.  Financiar el estipendio anual de **tres estudiantes universitarios** en FCEN-UBA (dos de grado de Física para hardware ambiental y uno de finalización de carrera para bioimágenes a $350 USD/mes cada uno, totalizando $12.600 USD), complementado con la articulación formativa de pasantes de ciencia de datos.
     5.  Financiar de manera integral el procesamiento ultraestructural de muestras y las horas de TEM mediante el servicio institucional ($2.500 USD).
     6.  Garantizar publicaciones en revistas de primer cuartil (Q1) en acceso abierto y difusión en congresos científicos ($9.000 USD).
-    7.  Cubrir rigurosamente el overhead institucional normativo del 10% ($5.000 USD: 5% FUNDACEN/Hacienda, 2,5% FCEN y 2,5% Departamento de Física/Instituto), las comisiones bancarias de transferencias internacionales e impuestos ($2.500 USD), y una reserva técnica de previsión ante variaciones de costos y contingencias ($3.400 USD), totalizando $10.900 USD.
+    7.  Cubrir rigurosamente el overhead institucional normativo (entre 5% y 10%, presupuestado al 10% = $5.000 USD, dependiendo de la entidad gestora —FUNDACEN o Hacienda—, facultad y departamento o instituto, destinado a administración financiera, rendición de cuentas, compras, contrataciones, infraestructura edilicia, conectividad, servicios generales y soporte operativo de talleres, laboratorios y equipamiento), las comisiones bancarias de transferencias internacionales e impuestos ($2.500 USD), y una reserva técnica de previsión ante variaciones de costos y contingencias ($3.400 USD), totalizando $10.900 USD.
 
 ---
 
@@ -160,14 +154,12 @@ La siguiente tabla replica la estructura del modelo en planilla de cálculo (Exc
 | **Servicios Técnicos Especializados:** Servicio integral institucional de Microscopía Electrónica de Transmisión (TEM): preparación y procesamiento ultraestructural de muestras biológicas (fijación química, inclusión en resina epoxi, ultramicrotomía de 70–90 nm, tinción de contraste doble) y horas de uso de microscopio TEM institucional (WP3.1) | Meses 5–8 | $2.500,00 |
 | **Difusión Científica y Congresos:** Inscripciones, pasajes, traslados y viáticos para presentación de ponencias y resultados del proyecto en congresos científicos nacionales e internacionales de bioimagen, visión artificial y neumonología pediátrica (WP5.3) | Meses 10–14 | $3.000,00 |
 | **Difusión Científica y Publicaciones:** Cargos por procesamiento de artículos (APCs) para la publicación de 2 a 3 artículos científicos en revistas internacionales indexadas de primer cuartil (Q1) bajo modalidad de acceso abierto (*Open Access*) (WP5.3) | Meses 12–14 | $6.000,00 |
-| **Administración Institucional (Overhead 5,0%):** Entidad gestora del convenio (FUNDACEN o Dirección General de Hacienda FCEN-UBA) para administración financiera, rendición de cuentas, compras y contrataciones | Meses 1–14 | $2.500,00 |
-| **Administración Institucional (Overhead 2,5%):** Facultad de Ciencias Exactas y Naturales (FCEN-UBA), sede institucional del proyecto, por uso de infraestructura edilicia, conectividad y servicios generales | Meses 1–14 | $1.250,00 |
-| **Administración Institucional (Overhead 2,5%):** Departamento de Física / Instituto de adscripción (FCEN-UBA), unidad ejecutora, para soporte operativo de talleres, laboratorios y equipamiento | Meses 1–14 | $1.250,00 |
+| **Administración Institucional (Overhead 5% a 10%):** Gastos de gestión y administración institucional (entre 5% y 10%, dependiendo de la entidad gestora —FUNDACEN o Hacienda—, facultad y departamento o instituto), destinados a administración financiera, rendición de cuentas, compras y contrataciones, infraestructura edilicia, conectividad y servicios generales, soporte operativo de talleres, laboratorios y equipamiento | Meses 1–14 | $5.000,00 |
 | **Costos Financieros e Impuestos:** Comisiones bancarias por transferencias internacionales de divisas en los 3 desembolsos de BBVA (50%, 40% y 10%) y gravámenes locales aplicables | Meses 1–14 | $2.500,00 |
 | **Previsión y Contingencia:** Fondo de reserva técnica ante variaciones de costos de plaza, fluctuaciones cambiarias o arancelarias durante la ejecución | Meses 1–14 | $3.400,00 |
 | **TOTAL GENERAL SOLICITADO (USD)** | **Meses 1–14** | **$50.000,00** |
 
-*(Nota para carga unificada en Excel: si el formulario de la convocatoria requiere consolidar el Rubro 6 en un único renglón, corresponde consignar: "Administración Institucional (Overhead 10%: FUNDACEN/Hacienda 5%, FCEN 2,5%, Depto. 2,5%), Costos Financieros e Impuestos ($2.500) y Fondo de Previsión ($3.400)", por un monto de $10.900,00 USD con período de ejecución en Meses 1–14).*
+*(Nota para carga unificada en Excel: si el formulario de la convocatoria requiere consolidar el Rubro 6 en un único renglón, corresponde consignar: "Administración Institucional (Overhead 5% a 10%: $5.000), Costos Financieros e Impuestos ($2.500) y Fondo de Previsión ($3.400)", por un monto de $10.900,00 USD con período de ejecución en Meses 1–14).*
 
 ---
 
@@ -197,7 +189,7 @@ La temporalidad asignada a cada partida presupuestaria se deduce de manera unív
 4.  **Meses 5 a 8:** Durante la ejecución de la tarea **WP3.1** ("Curaduría y adquisición de micrografías de TEM", meses 5–8), se contrata el Servicio Integral de Microscopía Electrónica de Transmisión ($2.500 USD) para el procesamiento químico y ultraestructural de las muestras y la obtención de micrografías de alta resolución.
 5.  **Meses 1 a 12 y 2 a 13:** Los estipendios de los 3 estudiantes universitarios ($12.600 USD en total) se abonan mensualmente a lo largo de 12 meses, garantizando la dedicación continua durante la construcción instrumental (WP1), el desarrollo de visión por computadora para HSVM (WP2, meses 2–7) y la segmentación con *convpaint* en TEM (WP3, meses 5–11).
 6.  **Meses 10 a 14:** Coincidiendo con el despliegue de **WP5** ("Capacitación Médica, Transferencia y Ciencia Abierta", meses 9–14) y específicamente la tarea **WP5.3** ("Liberación en código abierto y difusión científica", meses 11–14), se ejecutan las partidas destinadas a congresos científicos ($3.000 USD) y cargos por publicación Open Access APC ($6.000 USD).
-7.  **Meses 1 a 14 (Transversal):** La partida de administración institucional cubre el **overhead institucional regulatorio del 10,0% ($5.000 USD)** —discriminado en 5% ($2.500 USD) para FUNDACEN o Hacienda, 2,5% ($1.250 USD) para la FCEN y 2,5% ($1.250 USD) para el Departamento de Física / Instituto—, junto con las comisiones bancarias por transferencias internacionales de divisas en los 3 desembolsos de la Fundación BBVA ($2.500 USD) y un fondo de contingencia ($3.400 USD). Esta partida se devenga proporcionalmente a lo largo del proyecto, blindando financieramente la ejecución frente a contingencias macroeconómicas o cambiarias y acompañando los tres desembolsos estipulados por la Fundación BBVA (50% anticipo inicial, 40% hito intermedio y 10% tras la aprobación del informe final).
+7.  **Meses 1 a 14 (Transversal):** La partida de administración institucional cubre el **overhead institucional (entre 5% y 10%, presupuestado al 10,0% = $5.000 USD)** dependiendo de la entidad gestora (FUNDACEN o Hacienda), facultad y departamento o instituto —utilizado para administración financiera, rendición de cuentas, compras y contrataciones, infraestructura edilicia, conectividad, servicios generales, y soporte operativo de talleres, laboratorios y equipamiento—, junto con las comisiones bancarias por transferencias internacionales de divisas en los 3 desembolsos de la Fundación BBVA ($2.500 USD) y el fondo de contingencia ante variaciones de costos ($3.400 USD). Esta partida se devenga proporcionalmente a lo largo del proyecto, blindando financieramente la ejecución frente a contingencias macroeconómicas o cambiarias y acompañando los tres desembolsos estipulados por la Fundación BBVA (50% anticipo inicial, 40% hito intermedio y 10% tras la aprobación del informe final).
 
 
 
